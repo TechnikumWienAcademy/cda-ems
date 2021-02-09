@@ -1,0 +1,904 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ELGA_Stylesheet_v1.0.xsl"?>
+
+<!--
+	===============================================================================
+	Beispieldokument Arztmeldung
+	Dies ist ein Beispielbefund. Bei den Inhalten handelt es sich um synthetische Mustertexte und keinesfalls um personenbezogene Echtdaten oder realistische Befunde.
+	Das Beispiel veranschaulicht die technischen Möglichkeiten
+	
+	Version: 28.01.2021
+	===============================================================================
+-->
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:lab="urn:oid:1.3.6.1.4.1.19376.1.3.2" 
+	xmlns:sdtc="urn:hl7-org:sdtc" xsi:schemaLocation="urn:hl7-org:v3  CDA.xsd">
+	<!--=======================================================================
+
+		
+		Demo-Dokument
+
+		Autor:
+			Matthias Frohner, Alexander Mense, Nikolaus Krondraf
+			Fachhochschule Technikum Wien
+			cda@technikum-wien.at
+
+		Version: 28.01.2021
+		
+
+		Die Kommentare in diesem CDA Dokument dienen lediglich der Orientierungshilfe und sind nicht 
+		Bestandteil einer konkreten Implementierung!
+		=======================================================================
+		
+		
+		
+	
+		=======================================================================
+	-->
+	<!--
+			
+
+			Administrative Daten "CDA Header"
+
+			siehe Allgemeiner Leitfaden, Kapitel 6
+
+
+	-->
+	<!--
+			========================================================================
+			========================================================================
+			Dokumentenstruktur
+			siehe Allgemeiner Leitfaden, Kapitel 6.2
+			========================================================================
+			========================================================================
+	-->
+	<!--
+		Hoheitsbereich des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.2.3)
+	-->
+	<realmCode code="AT"/>
+	
+	<!--
+		Dokumentformat (siehe Allgemeiner Leitfaden, Kapitel 6.2.4)
+	-->
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	
+	<!--
+		ELGA Implementierungsleitfaden-Kennzeichnung (siehe Allgemeiner Leitfaden, Kapitel 6.2.5)
+	-->
+	
+	<!-- Folgt dem Template des Allgemeinen Implementierungsleitfadens "CDA Dokumente im österreichischen Gesundheitswesen" -->
+	<templateId root="1.2.40.0.34.11.1" assigningAuthorityName="ELGA"/>
+	
+	<!-- EMS Meldung -->
+	<templateId root="1.2.40.0.34.11.6"/>
+	
+	<!-- EMS Arztmeldung -->
+	<templateId root="1.2.40.0.34.11.6.0.2"/>
+	
+	<!--
+		Dokumenten-Id (siehe Allgemeiner Leitfaden, Kapitel 6.2.6)
+	-->
+	<id root="1.2.40.0.34.99.111.1.1" extension="134F02" assigningAuthorityName="Amadeus Spital"/>
+	
+	<!--
+		Dokumentenklasse (siehe Allgemeiner Leitfaden, Kapitel 6.2.7)
+	-->
+	<code code="34782-3" displayName="Infectious disease Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+	
+	<!--
+		Titel des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.2.8)
+	-->
+	<title>Arztmeldung</title>
+	
+	<!--
+		Erstellungsdatum des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.2.9)
+	-->
+	<effectiveTime value="20150502121500+0100"/>
+	
+	<!--
+		Vertraulichkeitscode (siehe Allgemeiner Leitfaden, Kapitel 6.2.10)
+	-->
+	<confidentialityCode code="N" displayName="normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="HL7:Confidentiality"/>
+	
+	<!--
+		Sprachcode des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.2.11)
+	-->
+	<languageCode code="de-AT"/>
+	
+	<!--
+		Versionierung des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.2.12)
+	-->
+	<setId root="1.2.40.0.34.99.111.1.1" extension="134F002" assigningAuthorityName="Amadeus Spital"/>
+	
+	<versionNumber value="1"/>
+
+	<!--
+		========================================================================
+		Patient (siehe Allgemeiner Leitfaden, Kapitel 6.3.1)
+		========================================================================
+	-->
+	<recordTarget>
+		<patientRole>
+		
+			<!-- 
+				IDs des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.2)
+			-->
+			<!-- Identifikation des Patienten im lokalen System -->
+			<id root="1.2.40.0.34.99.111.1.2" extension="4711" assigningAuthorityName="Amadeus Spital"/>
+			
+			<!-- Sozialversicherungsnummer des Patienten	-->
+			<id root="1.2.40.0.10.1.4.3.1" extension="1111241261" assigningAuthorityName="Österreichische Sozialversicherung"/>
+			
+			<!--
+				Adresse des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.3)
+			-->
+			<addr use="HP">
+				<streetAddressLine>Musterstraße 13a</streetAddressLine>
+				<postalCode>7000</postalCode>
+				<city>Eisenstadt</city>
+				<state>Burgenland</state>
+				<country>Österreich</country>
+			</addr>
+			
+			<!--
+				Kontaktdaten des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.4)
+			-->
+			<telecom use="H" value="tel:+43.2682.40400"/>
+			<telecom use="MC" value="tel:+43.664.1234567"/>
+			<telecom value="mailto:musterfrau@provider.at"/>
+			
+			<patient>
+			
+				<!-- 
+					Name des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.5)
+				-->
+				<name>
+					<prefix qualifier="AC">Dr.</prefix>
+					<given>Maria Johanna</given>
+					<family>Musterfrau</family>
+					<family qualifier="BR">VorDerHeirat</family>
+					<suffix qualifier="AC">BSc</suffix>
+				</name>
+				
+				<!--
+					Geschlecht des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.6)
+				-->
+				<administrativeGenderCode code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7:AdministrativeGender"/>
+				
+				<!--
+					Geburtsdatum des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.7)
+				-->
+				<birthTime value="19611224"/>
+				
+				<!--
+					Erweiterung des CDA Schemas um das Sterbedatum
+				-->
+				<sdtc:deceasedInd value="true"/>
+				<sdtc:deceasedTime value="20200101"/>
+				
+				<!--
+					Familienstand des Patienten  (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.8)
+				-->
+				<maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7:MaritalStatus"/>
+				
+				<!--
+					Religionszugehörigkeit des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.9)
+		
+				 -->
+				<religiousAffiliationCode code="101" codeSystem="2.16.840.1.113883.2.16.1.4.1" codeSystemName="HL7.AT:ReligionAustria" displayName="Römisch-Katholisch"/>
+				
+				<!-- 
+					Geburtsort des Patienten (siehe Allgemeiner Leitfaden, Kapitel 6.3.1.2.13)
+				-->
+				<birthplace>
+					<place>
+						<addr>
+							<streetAddressLine>Musterstraße 23b</streetAddressLine>
+							<postalCode>8011</postalCode>
+							<city>Graz</city>
+							<state>Steiermark</state>
+							<country>Österreich</country>
+						</addr>
+					</place>
+				</birthplace>
+			</patient>
+		</patientRole>
+	</recordTarget>
+
+	<!--
+		========================================================================
+		Verfasser des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.2)
+		========================================================================
+	-->
+	<author>
+	
+		<!--
+			Zeitpunkt der Erstellung (z.B. des Diktats) (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.2)
+		-->
+		<time value="20150501121500+0100"/>
+		
+		<assignedAuthor>
+		
+			<!--  
+				Identifikation des Verfassers des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.3)
+			-->
+			<id root="1.2.40.0.34.99.111.1.3" extension="1111"/>
+			
+			<!--
+				Fachrichtung des Verfassers des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.4)
+			-->
+			<code code="100" codeSystem="1.2.40.0.34.5.2" codeSystemName="ELGA_GTelVoGDARollen" displayName="Ärztin/Arzt für Allgemeinmedizin"/>
+			
+			<!--
+				Kontaktdaten des Verfassers des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.5)
+			-->
+			<telecom use="WP" value="tel:+43.1.3453446.1111"/>
+			
+			<!--
+				Personendaten des Verfassers des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.6)
+			-->
+			<assignedPerson>
+			
+				<!-- Name des Verfassers des Dokuments -->
+				<name>
+					<prefix>Dr.</prefix>
+					<family>Isabella</family>
+					<given>Stern</given>
+				</name>
+				
+			</assignedPerson>
+			
+
+			<!--
+				Organisation, in deren Auftrag der Verfasser des Dokuments die Dokumentation verfasst hat (siehe Allgemeiner Leitfaden, Kapitel 6.3.2.3.1.7)
+			-->
+			<representedOrganization>
+			
+				<!--
+					ID der Organisation aus dem GDA Index
+				-->
+				<id root="1.2.40.0.34.99.3" assigningAuthorityName="GDA Index"/>
+
+				<!--
+					Name der Organisation
+				-->
+				<name>Amadeus Praxis</name>
+				
+				<!-- 
+					Kontaktdaten der Organisation
+				-->
+				<telecom use="WP" value="tel:+43.1.3453446.0"/>
+				<telecom use="WP" value="fax:+43.1.3453446.4674"/>
+				<telecom use="WP" value="mailto:info@amadeuspraxis.at"/>
+				<telecom use="WP" value="http://www.amadeuspraxis.at"/>
+				
+				<!--
+					Adresse der Organisation
+				-->
+				<addr>
+					<streetName>Währinger Gürtel</streetName>
+					<houseNumber>18-20</houseNumber>
+					<postalCode>1090</postalCode>
+					<city>Wien</city>
+					<state>Wien</state>
+					<country>Österreich</country>
+				</addr>
+				
+			</representedOrganization>
+			
+		</assignedAuthor>
+	</author>
+	
+
+	<!--
+		========================================================================
+		Verwahrer des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.4)
+		========================================================================
+	-->
+	<custodian>
+		<assignedCustodian>
+			<representedCustodianOrganization>
+			
+				<!--
+					ID der Organisation aus dem GDA Index
+				-->
+				<id root="1.2.40.0.34.99.3" assigningAuthorityName="GDA Index"/>
+
+				<!--
+					Name der Organisation
+				-->
+				<name>Amadeus Praxis</name>
+				
+				<!-- 
+					Kontaktdaten der Organisation
+				-->
+				<telecom value="tel:+43.1.3453446.0"/>
+					
+				<!--
+					Adresse der Organisation
+				-->
+				<addr>
+					<streetName>Währinger Gürtel</streetName>
+					<houseNumber>18-20</houseNumber>
+					<postalCode>1090</postalCode>
+					<city>Wien</city>
+					<state>Wien</state>
+					<country>Österreich</country>
+				</addr>
+
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+
+	<!--
+		+++++++++++++++++
+		PRIMÄRER Empfänger
+		+++++++++++++++++
+	-->
+	<informationRecipient typeCode="PRCP">
+
+		<intendedRecipient>
+		
+			<!--
+				Identifikation des beabsichtigten Empfängers (Person) aus dem GDA-Index (siehe Allgemeiner Leitfaden, Kapitel 6.3.5.2.2)
+			-->
+			<id root="1.2.40.0.34.3.1.1" assigningAuthorityName="moh-at"/>
+			
+			<!--
+				Personendaten des beabsichtigten Empfängers (siehe Allgemeiner Leitfaden, Kapitel 6.3.5.2.3)
+			-->
+			<informationRecipient>
+				<name>BMGF</name>
+			</informationRecipient>
+			
+			<!--
+				Organisation, der der beabsichtigte Empfänger angehört (siehe Allgemeiner Leitfaden, Kapitel 6.3.5.2.4)
+			-->
+			<receivedOrganization>
+				<!--
+					Identifikation der Organisation des beabsichtigten Empfängers aus dem GDA-Index
+				-->
+				<id root="1.2.40.0.34.3.1.1" assigningAuthorityName="BMGF"/>
+				
+				<!--
+					Name der Organisation des beabsichtigten Empfängers
+				-->
+				<name>BMGF</name>
+				
+				<!--
+					Kontaktdaten der Organisation des beabsichtigten Empfängers
+				-->
+				<telecom value="tel:+43.1.71100-0"/>
+				
+				<!--
+					Adresse der Organisation des beabsichtigten Empfängers
+				-->
+				<addr>
+					<streetAddressLine>Radetzkystraße 2</streetAddressLine>
+					<postalCode>1030</postalCode>
+					<city>Wien</city>
+					<country>Österreich</country>
+				</addr>
+			</receivedOrganization>
+			
+		</intendedRecipient>
+	</informationRecipient>
+
+	<!--
+		========================================================================
+		Rechtlicher Unterzeichner (siehe Allgemeiner Leitfaden, Kapitel 6.3.6)
+		========================================================================
+	-->
+	<legalAuthenticator>
+		<!-- 
+			Zeitpunkt der Unterzeichnung (siehe Allgemeiner Leitfaden, Kapitel 6.3.6.2.2)
+		-->
+		<time value="20150501101500+0100"/>
+		
+		<!-- 
+			Signaturcode (siehe Allgemeiner Leitfaden, Kapitel 6.3.6.2.3)
+		-->
+		<signatureCode code="S"/>
+		<!--
+			Personen- und Organisationsdaten des Rechtlichen Unterzeichners des Dokuments (siehe Allgemeiner Leitfaden, Kapitel 6.3.6.2.4)
+		-->
+		<assignedEntity>
+		
+			<!--  
+				Identifikation des Rechtlichen Unterzeichners des Dokuments
+			-->
+			<id root="1.2.40.0.34.99.111.1.3" extension="2222"/>
+			
+			<!--
+				Adresse des Unterzeichners
+			-->
+			<addr>
+				<streetName>Währinger Gürtel</streetName>
+				<houseNumber>18-20</houseNumber>
+				<postalCode>1090</postalCode>
+				<city>Wien</city>
+				<state>Wien</state>
+				<country>Österreich</country>
+			</addr>
+			
+			<!--
+				Kontaktdaten des Rechtlichen Unterzeichners des Dokuments 
+			-->
+			<telecom use="WP" value="tel:+43.1.3453446.2222"/>
+			
+			<!--
+				Personendaten des Rechtlichen Unterzeichners des Dokuments 
+			-->
+			<assignedPerson>
+			
+				<!-- Name des Rechtlichen Unterzeichners des Dokuments -->
+				<name>
+					<prefix>Univ.-Prof.Dr.</prefix>
+					<family>Sigrid</family>
+					<given>Kollmann</given>
+				</name>
+				
+			</assignedPerson>
+			
+
+			<!--
+				Organisation, in deren Auftrag der Rechtlichen Unterzeichners des Dokuments die Dokumentation unterzeichnet hat
+			-->
+			<representedOrganization>
+			
+				<!--
+					ID der Organisation aus dem GDA Index
+				-->
+				<id root="1.2.40.0.34.99.3" assigningAuthorityName="GDA Index"/>
+
+				<!--
+					Name der Organisation
+				-->
+				<name>Amadeus Praxis</name>
+				
+				<!-- 
+					Kontaktdaten der Organisation
+				-->
+				<telecom use="WP" value="tel:+43.1.3453446.0"/>
+				<telecom use="WP" value="fax:+43.1.3453446.4674"/>
+				<telecom use="WP" value="mailto:info@amadeuspraxis.at"/>
+				<telecom use="WP" value="http://www.amadeuspraxis.at"/>
+				
+				<!--
+					Adresse der Organisation
+				-->
+				<addr>
+					<streetName>Währinger Gürtel</streetName>
+					<houseNumber>18-20</houseNumber>
+					<postalCode>1090</postalCode>
+					<city>Wien</city>
+					<state>Wien</state>
+					<country>Österreich</country>
+				</addr>
+				
+			</representedOrganization>
+			
+		</assignedEntity>
+	</legalAuthenticator>
+	
+	
+
+	<!--
+			========================================================================
+			========================================================================
+			Dokumentation der Gesundheitsdienstleistung
+			========================================================================
+			========================================================================
+	-->
+	<documentationOf>
+		<serviceEvent>
+		
+			<!--
+				Code des ServiceEvents
+			-->
+			<code code="34782-3" displayName="Infectious disease Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			
+			<effectiveTime>
+				<!-- Zeitpunkt der Erfassung des Auftrags in Labor EDV -->
+				<low value="20150501"/>
+				<!-- Abschlusszeit des Auftrags, welche in der Regel mit der medizinischen Freigabe des Auftrags ident ist -->
+				<high value="20150502"/>
+			</effectiveTime>
+		</serviceEvent>
+	</documentationOf>
+	
+	<documentationOf>
+		<serviceEvent>
+		
+			<!--
+				Code des ServiceEvents
+			-->
+			<code code="75476-2" displayName="Physician Note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"/>
+			
+			<effectiveTime>
+				<!-- Zeitpunkt der Erfassung des Auftrags in Labor EDV -->
+				<low value="20150501"/>
+				<!-- Abschlusszeit des Auftrags, welche in der Regel mit der medizinischen Freigabe des Auftrags ident ist -->
+				<high value="20150502"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<templateId root="1.3.6.1.4.1.19376.1.3.3.1.7"/>
+				<assignedEntity>
+					<id root="1.2.40.0.34.99.111.1.3" extension="1111"/>
+						<addr>
+						<streetName>Währinger Gürtel</streetName>
+						<houseNumber>18-20</houseNumber>
+						<postalCode>1090</postalCode>
+						<city>Wien</city>
+						<state>Wien</state>
+						<country>Österreich</country>
+					</addr>
+					<telecom use="WP" value="tel:+43.1.3453446.0"/>
+					
+					<assignedPerson>
+						<name>
+							<prefix>Dr.</prefix>
+							<family>Isabella</family>
+							<given>Stern</given>
+						</name>
+					</assignedPerson>
+					<representedOrganization>
+						<id root="1.2.40.0.34.99.3" assigningAuthorityName="GDA Index"/>
+						<name>Amadeus Praxis</name>
+						<telecom use="WP" value="tel:+43.1.3453446.0"/>
+						<addr>
+							<streetName>Währinger Gürtel</streetName>
+							<houseNumber>18-20</houseNumber>
+							<postalCode>1090</postalCode>
+							<city>Wien</city>
+							<state>Wien</state>
+							<country>Österreich</country>
+						</addr>
+					</representedOrganization>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	
+	
+	
+	<!--
+		========================================================================
+		CDA BODY
+		========================================================================
+	-->
+
+	<component typeCode="COMP">
+		<structuredBody>
+		
+			<component typeCode="COMP">
+			
+				<!-- Spezifikation zu dieser Sektion und den Child-Elementen in Kapitel 5.1.3.2 des EMS Leitfadens -->
+				<section classCode="DOCSECT">
+					<templateId root="1.2.40.0.34.6.0.11.2.78"/>
+					
+					<code code="3" codeSystem="1.2.40.0.34.5.189" 
+						codeSystemName="EMS_struktur_elemente" displayName="EMS_Section"/>
+					<title>Arztmeldung</title>
+					
+					<text>
+									
+						<paragraph styleCode="xELGA_h3">Klinische Manifestation</paragraph>
+						<content ID="disdiag1">Epiglottitis</content><br/>
+						<content ID="disdiag2">Pneumonie</content>
+											
+						<paragraph styleCode="xELGA_h3">Diagnose</paragraph>
+						<content ID="diag">Haemophilus influenzae-Infektion, invasive Erkrankung</content>
+						
+						<paragraph styleCode="xELGA_h3">Tätigkeitsbereich/Betreuung</paragraph>
+						Der Patient war im medizinischen Bereich UND einer Gemeinschaftseinrichtung tätig.
+						
+						<paragraph styleCode="xELGA_h3">Impfung</paragraph>
+						Impfstoff <content ID="prodName-1">ENCEPUR FSPR 0,25ML KIND</content><br/>
+						Anzahl erhaltener Dosen:1<br/>
+						Datum: 17.6.2016
+						
+						
+						
+						
+						<paragraph styleCode="xELGA_h3">Weitere Information</paragraph>
+						Krankheit wurde im Ausland (Gabun) erworben<br/>
+						Patientin aufgrund der Erkrankung verstorben (1.1.2020), war hospitalisiert
+					</text> 
+					
+					
+					<entry typeCode="DRIV">
+						<templateId root="1.3.6.1.4.1.19376.1.3.1"/>
+						
+						<act classCode="ACT" moodCode="EVN">
+						
+							<code code="34782-3" codeSystem="2.16.840.1.113883.6.1"
+								codeSystemName="LOINC" displayName="Infectious disease Note"/>
+							<statusCode code="completed"/>
+							
+							<!-- 
+								Notification Organizer nach EMS Leitfaden Kapitel 5.5 
+							-->
+							<entryRelationship typeCode="COMP">
+								<organizer classCode="CLUSTER" moodCode="EVN">
+									<templateId root="1.2.40.0.34.6.0.11.3.56"/>
+									<templateId root="1.3.6.1.4.1.19376.1.3.1.1"/>
+									<statusCode code="completed"/>
+								
+									<!-- 
+										Erreger meldepflichtiger Krankheit (notifiable condition) nach EMS Leitfaden Kapitel 5.5.2 
+										
+										Bei Arztmeldung erlaubt jedoch nicht notwendig
+									-->
+									
+									
+									<!-- zu meldende Krankheit (case identification) nach EMS Leitfaden Kapitel 5.5.3 -->
+									<component typeCode="COMP">
+										<observation classCode="CASE" moodCode="EVN">
+											<templateId root="1.2.40.0.34.6.0.11.3.57"/>
+											<templateId root="1.3.6.1.4.1.19376.1.3.1.1.2"/>
+											<templateId root="1.2.40.0.34.11.6.3.2"/>
+											
+											<!-- Hier ist die Fallnummer welche vom EMS zugewiesen wurde 
+											sollte es sich um die erste Meldung handeln und es ist noch keine
+											Id vorhanden wird das Id-Feld nicht angegeben -->
+											<id root="1.2.40.0.34.3.1.1" extension="123a3f3"/>
+											
+											<code code="416341003" codeSystem="2.16.840.1.113883.6.96"
+												/>
+											<statusCode code="completed"/>
+											
+											<!-- Diagnosedatum -->
+											<effectiveTime value="201505010834+0100"/>
+											
+											<value xsi:type="CD" code="G00.0" codeSystem="1.2.40.0.34.5.171"
+												displayName="Haemophilus influenzae">
+												<!--<qualifier>
+													<name code="8" codeSystem="2.16.840.1.113883.3.7.1.0"/>
+													<value code="G" codeSystem="2.16.840.1.113883.3.7.1.8"/>
+												</qualifier>-->
+												
+												<qualifier>
+													<name code="Krankheitsmerkmal" codeSystem="1.2.40.0.34.5.101"/>
+													<value code="TOD_KRANKHEIT" codeSystem="1.2.40.0.34.5.105"/>
+												</qualifier>
+												<!--<qualifier>
+													<name code="Krankheitsmerkmal" codeSystem="1.2.40.0.34.5.101"/>
+													<value code="ASYMPTOMATISCH" codeSystem="1.2.40.0.34.5.105"/>
+												</qualifier>-->
+											</value>
+											
+											<informant typeCode="INF">
+												<relatedEntity classCode="PAT">
+													<!-- vom Patienten berichtetes Erkrankungsdatum -->
+													<effectiveTime value="20150324"/>
+												</relatedEntity>
+											</informant>
+										</observation>
+									</component>
+								</organizer>
+							</entryRelationship>
+						
+							<!-- EMS Parameter -->
+							<entryRelationship typeCode="COMP">
+								<organizer classCode="BATTERY" moodCode="EVN">
+									<templateId root="1.2.40.0.34.6.0.11.3.93"/>
+									<templateId root="1.2.40.0.34.11.6.2.1"/>
+									
+									<code code="30" codeSystem="1.2.40.0.34.5.189" 
+										codeSystemName="EMS_struktur_elemente" displayName="EMS_Organizer"/>
+										
+									<statusCode code="completed"/>
+									
+									<component typeCode="COMP">
+										<observation classCode="OBS" moodCode="EVN"> 
+											<!-- Code für "wo wurde Krankheit erworben" --> 
+											<code code="ILLOC" codeSystem="1.2.40.0.34.5.101"/> 
+											<!-- Krankheit im Ausland erworben --> 
+											<value xsi:type="CD" code="AL" codeSystem="1.2.40.0.34.5.77"> 
+												<qualifier> 
+													<name code="TRVCNTRY" codeSystem="1.2.40.0.34.5.101"/>
+													<value code="GA" codeSystem="1.2.40.0.34.5.96"/> 
+												</qualifier> 
+											</value> 
+										</observation>
+									</component>
+								</organizer>
+							</entryRelationship>							
+						</act>
+					</entry>
+					
+					<!-- Hospitalisierung -->
+					<entry> 
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="1.2.40.0.34.6.0.11.3.60"/>
+							<templateId root="1.2.40.0.34.11.6.3.6"/> 
+							<code code="32485007" codeSystem="2.16.840.1.113883.6.96" 
+								displayName="Hospital admission (procedure)" codeSystemName="SNOMED CT"/> 
+							<effectiveTime value="201504220800"/> 
+						</act> 
+					</entry>
+					
+					<!-- Klinische Merkmale -->
+					<entry>
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="1.2.40.0.34.6.0.11.3.98"/>
+							<templateId root="1.2.40.0.34.6.0.11.3.7" assigningAuthorityName="ELGA"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.1" assigningAuthorityName="IHE PCC"/>
+							<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5.2" assigningAuthorityName="IHE PCC"/>
+							<templateId root="2.16.840.1.113883.10.20.1.27" assigningAuthorityName="HL7 CCD"/>
+							<id root="002D59AE-7CC4-2439-21B1-597B76C4187E"/>
+							<code nullFlavor="NA"/>
+							<!-- Status des Problems: active | suspended | aborted | completed --> 
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20130111"/>
+							</effectiveTime>
+							
+							<entryRelationship inversionInd="false" typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN" negationInd="false">
+									<templateId root="1.2.40.0.34.6.0.11.3.99"/>
+									<templateId root="1.2.40.0.34.6.0.11.3.6" assigningAuthorityName="ELGA"/>
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE PCC"/>
+									<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="HL7 CCD"/>
+									<id root="DBA414DE-6B92-4D74-30D1-46BC36770F79"/>
+									<code code="404684003" displayName="Clinical finding (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<text>
+										<reference value="#disdiag1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20150311"/>
+										<!-- <high value="20130211"/> -->
+									</effectiveTime>
+									<value xsi:type="CD" code="80384002" displayName="Epiglottitis (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+										<originalText><reference value="#disdiag1"/></originalText>
+									</value>
+								</observation>
+							</entryRelationship>
+							<entryRelationship inversionInd="false" typeCode="SUBJ">
+								<observation classCode="OBS" moodCode="EVN" negationInd="false">
+									<templateId root="1.2.40.0.34.6.0.11.3.99"/>
+									<templateId root="1.2.40.0.34.6.0.11.3.6" assigningAuthorityName="ELGA"/>
+									<templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.5" assigningAuthorityName="IHE PCC"/>
+									<templateId root="2.16.840.1.113883.10.20.1.28" assigningAuthorityName="HL7 CCD"/>
+									<id root="DBA414DE-6B92-4D74-30D1-46BC36770F79"/>
+									<code code="404684003" displayName="Clinical finding (finding)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<text>
+										<reference value="#disdiag1"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20150311"/>
+										<!-- <high value="20130211"/> -->
+									</effectiveTime>
+									<value xsi:type="CD" code="233604007" displayName="Pneumonia (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+										<originalText><reference value="#disdiag2"/></originalText>
+									</value>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<!-- Angabe über den Tätigkeitsbereichs des Patienten/der Patientin bzw. Information bezüglich einer etwaigen Betreueung-->
+					<entry>
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<templateId root="1.2.40.0.34.6.0.11.3.95"/>
+							<code code="40" codeSystem="1.2.40.0.34.5.189" displayName="EMS_Organizer_Taetigkeitsbereich"/>
+							<statusCode code="completed"/>
+							<component typeCode="COMP">
+								<act moodCode="EVN" classCode="INFRM">
+									<templateId root="1.2.40.0.34.6.0.11.3.94"/>
+									<code code="223366009" codeSystem="2.16.840.1.113883.6.96" displayName="Healthcare professional (occupation)"/>
+									<effectiveTime>
+										<low value="20200725143355"/>
+									</effectiveTime>
+								</act>
+							</component>
+						</organizer>
+					</entry>
+					<entry>
+						<organizer classCode="BATTERY" moodCode="EVN">
+							<templateId root="1.2.40.0.34.6.0.11.3.106"/>
+							<code code="50" codeSystem="1.2.40.0.34.5.189" displayName="EMS_Organizer_Betreuung"/>
+							<statusCode code="completed"/>
+							<component typeCode="COMP">
+								<act moodCode="EVN" classCode="INFRM">
+									<templateId root="1.2.40.0.34.6.0.11.3.105"/>
+									<code code="303119007" codeSystem="2.16.840.1.113883.6.96" displayName="Person in the community environment (person)"/>
+									<effectiveTime>
+										<low value="20200725143355"/>
+									</effectiveTime>
+								</act>
+							</component>
+						</organizer>
+					</entry>
+					
+					<!-- 
+						Angaben zur Impfung 
+					-->
+					
+					<!-- 
+						Hinweis:
+						Im Sinne der Wiederverwendbarkeit von templates, nutzt die Arztmeldung zur Angabe von Impfungen ein template aus dem eImpfpass. Trotz der umfangreich anmutenden Struktur dieses templates gibt es nur wenige Inhaltselemente welche für die Umsetzung im Zuge der Arztmeldung zu beachten sind -> don't panic. Diese wären (basierend auf dem Formblatt der Arztmeldung):
+						- geimpft: abgebildet in substanceAdministration/code
+						- geimpft, aber Intervall überzogen: abgebildet in substanceAdministration/code
+						- Anzahl erhaltener Impfdosen: abgebildet in substanceAdministration/precondition/criterion/value
+						- Datum der letzen Impfung: abgebildet in substanceAdministration/effectiveTime
+						- Impfstoff (Produktname): abgebildet in substanceAdministration/consumable/manufacturedProduct/manufacturedMaterial/code (verpflichtend, Code laut Pharmazentralnummer) und /name (optional, Handelsname)
+						- nicht geimpft: abgebildet in eigenständigen template "Immunization Entry Impfung nicht angegeben"
+						
+						Im Vergleich zu dem Immunization Entry des eImpfass gibt es folgende Änderungen:
+						- substanceAdministration/code ist nicht nur auf "IMMUNIZ" beschränkt
+						- substanceAdministration/id ist nicht verpflichtend
+						- substanceAdministration/text ist nicht verpflichtend
+					-->
+					<entry typeCode="DRIV">
+                        <substanceAdministration moodCode="EVN" negationInd="false"
+                            classCode="SBADM">
+                            <templateId root="1.2.40.0.34.6.0.11.3.97"/>
+                            <templateId root="2.16.840.1.113883.10.20.1.24"/>
+                            
+                            
+                            <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4"
+                                codeSystemName="ActCode"/>
+                            
+                            <statusCode code="completed"/>
+                            <!-- Impfdatum -->
+                            <effectiveTime value="20160617121500+0200"/>
+                            <routeCode nullFlavor="NA"/>
+                            <approachSiteCode nullFlavor="NA"/>
+                            <!-- Anzahl der abgegebenen Produkte -->
+                            <doseQuantity nullFlavor="UNK"/>
+                            <!-- Impfstoff-Produkt -->
+                            <consumable typeCode="CSM">
+                                <manufacturedProduct xmlns:pharm="urn:ihe:pharm:medication"
+                                    classCode="MANU">
+                                    <templateId root="1.2.40.0.34.6.0.11.9.32"/>
+                                    <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.7.2"/>
+                                    <templateId root="2.16.840.1.113883.10.20.1.53"/>
+                                    <manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+                                        <templateId root="1.3.6.1.4.1.19376.1.9.1.3.1"/>
+                                        <!-- PZN des Impfstoff-Produkts und die Kurzbezeichnung -->
+                                        <code code="2427872" codeSystem="1.2.40.0.34.4.16.1"
+                                            displayName="ENCEPUR FSPR 0,25ML KIND">
+                                            <originalText>
+                                                <reference value="#prodName-1"/>
+                                            </originalText>
+                                        </code>
+                                        <!-- Handelsname des Impfstoff-Produkts -->
+                                        <name>Encepur 0,25 ml für Kinder Injektionssuspension in
+                                            einer Fertigspritze</name>
+                                        <!-- Chargennummer, kann nullFlavor UNK oder NA haben -->
+                                        <lotNumberText>6232165-5687</lotNumberText>
+                                        <!-- Komponente zur Aufnahme des Wirkstoffs -->
+                                        
+                                    </manufacturedMaterial>
+                                </manufacturedProduct>
+                            </consumable>
+							
+							
+                            
+                            <precondition>
+                                <criterion classCode="OBS" moodCode="EVN.CRT">
+                                    <templateId root="1.2.40.0.34.6.0.11.3.10"/>
+                                    <code nullFlavor="NI"/>
+                                    <text>
+                                        <reference value="#criterion-1"/>
+                                    </text>
+                                    <!-- Dosis-Nummer ("Impfdosis") MUSS angegeben werden -->
+                                    <value xsi:type="CD" code="D1" codeSystem="1.2.40.0.34.5.183"
+                                        displayName="Dosis 1">
+                                        <originalText>
+                                            <reference value="#dosenr-1"/>
+                                        </originalText>
+                                    </value>
+                                </criterion>
+                            </precondition>
+                        </substanceAdministration>
+                    </entry>
+				</section>
+			</component> 
+		</structuredBody>
+	</component>
+</ClinicalDocument>

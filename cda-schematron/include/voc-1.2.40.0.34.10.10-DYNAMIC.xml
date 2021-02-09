@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.10.10" name="atcdabbr_LanguageCode" displayName="atcdabbr_LanguageCode" effectiveDate="2020-08-20T10:15:03" statusCode="draft" versionLabel="202008(-beta)" url="http://art-decor.org/decor/services/" ident="at-cda-bbr-" referencedFrom="epims-">
+        <desc language="de-DE">Wird zur Beschreibung der Sprache des Dokuments verwendet  (Element ClinicalDocument.languageCode). Beschreibung unter http://www.ietf.org/rfc/rfc3066.txt</desc>
+        <desc language="en-US">ELGA_LanguageCode is used to describe the language of the documents (CDA-Element: ClinicalDocument.languageCode). Description available under: http://www.ietf.org/rfc/rfc3066.txt</desc>
+        <sourceCodeSystem id="2.16.840.1.113883.6.121" identifierName="Tags&#160;for&#160;the&#160;Identification&#160;of&#160;Languages" canonicalUri="urn:oid:2.16.840.1.113883.6.121" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.6.121" canonicalUriSTU3="urn:oid:2.16.840.1.113883.6.121" canonicalUriR4="urn:oid:2.16.840.1.113883.6.121"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="ar" codeSystem="2.16.840.1.113883.6.121" displayName="Arabisch" level="0" type="L"/>
+            <concept code="bn" codeSystem="2.16.840.1.113883.6.121" displayName="Bengali" level="0" type="L"/>
+            <concept code="cs" codeSystem="2.16.840.1.113883.6.121" displayName="Tschechisch" level="0" type="L"/>
+            <concept code="da" codeSystem="2.16.840.1.113883.6.121" displayName="Dänisch" level="0" type="L"/>
+            <concept code="de" codeSystem="2.16.840.1.113883.6.121" displayName="Deutsch" level="0" type="L"/>
+            <concept code="de-AT" codeSystem="2.16.840.1.113883.6.121" displayName="Österreichisches Deutsch" level="0" type="L"/>
+            <concept code="de-CH" codeSystem="2.16.840.1.113883.6.121" displayName="Deutsch (Schweiz)" level="0" type="L"/>
+            <concept code="de-DE" codeSystem="2.16.840.1.113883.6.121" displayName="Deutsch (Deutschland)" level="0" type="L"/>
+            <concept code="el" codeSystem="2.16.840.1.113883.6.121" displayName="Neugriechisch" level="0" type="L"/>
+            <concept code="en" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch" level="0" type="L"/>
+            <concept code="en-AU" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (Australien)" level="0" type="L"/>
+            <concept code="en-CA" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (Kanada)" level="0" type="L"/>
+            <concept code="en-GB" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (GB)" level="0" type="L"/>
+            <concept code="en-IN" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (Indien)" level="0" type="L"/>
+            <concept code="en-NZ" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (Neuseeland)" level="0" type="L"/>
+            <concept code="en-SG" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (Singapur)" level="0" type="L"/>
+            <concept code="en-US" codeSystem="2.16.840.1.113883.6.121" displayName="Englisch (US)" level="0" type="L"/>
+            <concept code="es" codeSystem="2.16.840.1.113883.6.121" displayName="Spanisch" level="0" type="L"/>
+            <concept code="es-AR" codeSystem="2.16.840.1.113883.6.121" displayName="Spanisch (Argentinien)" level="0" type="L"/>
+            <concept code="es-ES" codeSystem="2.16.840.1.113883.6.121" displayName="Spanish (Spanien)" level="0" type="L"/>
+            <concept code="es-UY" codeSystem="2.16.840.1.113883.6.121" displayName="Spanish (Uruguay)" level="0" type="L"/>
+            <concept code="fi" codeSystem="2.16.840.1.113883.6.121" displayName="Finnisch" level="0" type="L"/>
+            <concept code="fr" codeSystem="2.16.840.1.113883.6.121" displayName="Französisch" level="0" type="L"/>
+            <concept code="fr-BE" codeSystem="2.16.840.1.113883.6.121" displayName="Französisch (Belgien)" level="0" type="L"/>
+            <concept code="fr-CH" codeSystem="2.16.840.1.113883.6.121" displayName="Französisch (Schweiz)" level="0" type="L"/>
+            <concept code="fr-FR" codeSystem="2.16.840.1.113883.6.121" displayName="Französisch (Frankreich)" level="0" type="L"/>
+            <concept code="fy" codeSystem="2.16.840.1.113883.6.121" displayName="Friesisch" level="0" type="L"/>
+            <concept code="fy-NL" codeSystem="2.16.840.1.113883.6.121" displayName="Friesisch (Niederlande)" level="0" type="L"/>
+            <concept code="hi" codeSystem="2.16.840.1.113883.6.121" displayName="Hindi" level="0" type="L"/>
+            <concept code="hr" codeSystem="2.16.840.1.113883.6.121" displayName="Kroatisch" level="0" type="L"/>
+            <concept code="it" codeSystem="2.16.840.1.113883.6.121" displayName="Italienisch" level="0" type="L"/>
+            <concept code="it-CH" codeSystem="2.16.840.1.113883.6.121" displayName="Italienisch (Schweiz)" level="0" type="L"/>
+            <concept code="it-IT" codeSystem="2.16.840.1.113883.6.121" displayName="Italienisch (Italien)" level="0" type="L"/>
+            <concept code="ja" codeSystem="2.16.840.1.113883.6.121" displayName="Japanisch" level="0" type="L"/>
+            <concept code="ko" codeSystem="2.16.840.1.113883.6.121" displayName="Koreanisch" level="0" type="L"/>
+            <concept code="nl" codeSystem="2.16.840.1.113883.6.121" displayName="Niederländisch" level="0" type="L"/>
+            <concept code="nl-BE" codeSystem="2.16.840.1.113883.6.121" displayName="Niederländisch (Belgien)" level="0" type="L"/>
+            <concept code="nl-NL" codeSystem="2.16.840.1.113883.6.121" displayName="Niederländisch (Niederlande)" level="0" type="L"/>
+            <concept code="no" codeSystem="2.16.840.1.113883.6.121" displayName="Norwegisch" level="0" type="L"/>
+            <concept code="no-NO" codeSystem="2.16.840.1.113883.6.121" displayName="Norwegisch (Norwegen)" level="0" type="L"/>
+            <concept code="pa" codeSystem="2.16.840.1.113883.6.121" displayName="Pandschabi-Sprache" level="0" type="L"/>
+            <concept code="pl" codeSystem="2.16.840.1.113883.6.121" displayName="Polnisch" level="0" type="L"/>
+            <concept code="pt" codeSystem="2.16.840.1.113883.6.121" displayName="Portugiesisch" level="0" type="L"/>
+            <concept code="pt-BR" codeSystem="2.16.840.1.113883.6.121" displayName="Portugiesisch (Brasilien)" level="0" type="L"/>
+            <concept code="ru" codeSystem="2.16.840.1.113883.6.121" displayName="Russisch" level="0" type="L"/>
+            <concept code="ru-RU" codeSystem="2.16.840.1.113883.6.121" displayName="Russisch (Russland)" level="0" type="L"/>
+            <concept code="sr" codeSystem="2.16.840.1.113883.6.121" displayName="Serbisch" level="0" type="L"/>
+            <concept code="sr-RS" codeSystem="2.16.840.1.113883.6.121" displayName="Serbisch (Serbien)" level="0" type="L"/>
+            <concept code="sv" codeSystem="2.16.840.1.113883.6.121" displayName="Schwedisch" level="0" type="L"/>
+            <concept code="sv-SE" codeSystem="2.16.840.1.113883.6.121" displayName="Schwedisch (Schweden)" level="0" type="L"/>
+            <concept code="te" codeSystem="2.16.840.1.113883.6.121" displayName="Telugu-Sprache" level="0" type="L"/>
+            <concept code="zh" codeSystem="2.16.840.1.113883.6.121" displayName="Chinesisch" level="0" type="L"/>
+            <concept code="zh-CN" codeSystem="2.16.840.1.113883.6.121" displayName="Chinesisch (China)" level="0" type="L"/>
+            <concept code="zh-HK" codeSystem="2.16.840.1.113883.6.121" displayName="Chinesisch (Hong Kong)" level="0" type="L"/>
+            <concept code="zh-SG" codeSystem="2.16.840.1.113883.6.121" displayName="Chinesisch (Singapur)" level="0" type="L"/>
+            <concept code="zh-TW" codeSystem="2.16.840.1.113883.6.121" displayName="Chinesisch (Taiwan)" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

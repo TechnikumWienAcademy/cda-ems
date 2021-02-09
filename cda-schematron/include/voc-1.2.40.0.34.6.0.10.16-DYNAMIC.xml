@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.6.0.10.16" name="epims_materialMethod" displayName="EMS MaterialMethode VS" effectiveDate="2020-02-20T14:30:03" statusCode="draft" versionLabel="2020">
+        <desc language="de-DE">Diese Codeliste definiert Inhalte für procedure/methodCode im Kontext vom EMS-Österreich<br clear="none"/>
+        </desc>
+        <sourceCodeSystem id="1.2.40.0.34.5.99" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.99" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.99" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.99" canonicalUriR4="urn:oid:1.2.40.0.34.5.99"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="MAT1" codeSystem="1.2.40.0.34.5.99" displayName="Primary Sample" level="0" type="L"/>
+            <concept code="MAT2" codeSystem="1.2.40.0.34.5.99" displayName="Secondary Sample" level="0" type="L"/>
+            <concept code="KULTUR" codeSystem="1.2.40.0.34.5.99" displayName="Methode Kultur Material" level="0" type="L"/>
+            <concept code="MIKRO" codeSystem="1.2.40.0.34.5.99" displayName="Methode Mikroskopie Material" level="0" type="L"/>
+            <concept code="NAT" codeSystem="1.2.40.0.34.5.99" displayName="Methode NAT Material" level="0" type="L"/>
+            <concept code="HIST" codeSystem="1.2.40.0.34.5.99" displayName="Methode Material Histologie" level="0" type="L"/>
+            <concept code="VIRUS" codeSystem="1.2.40.0.34.5.99" displayName="Methode Material Virusnachweis" level="0" type="L"/>
+            <concept code="SERO" codeSystem="1.2.40.0.34.5.99" displayName="Methode Material Serologie" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

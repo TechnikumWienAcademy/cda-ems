@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="2.16.840.1.113883.2.16.777.3.11.1" name="epims_Reiseland" displayName="EMS Reiseland VS" effectiveDate="2020-02-20T16:41:33" statusCode="draft" versionLabel="2020">
+        <sourceCodeSystem id="1.2.40.0.34.5.96" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.96" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.96" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.96" canonicalUriR4="urn:oid:1.2.40.0.34.5.96"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="AT" codeSystem="1.2.40.0.34.5.96" displayName="Österreich" level="0" type="L"/>
+            <concept code="AF" codeSystem="1.2.40.0.34.5.96" displayName="Afghanistan" level="0" type="L"/>
+            <concept code="EG" codeSystem="1.2.40.0.34.5.96" displayName="Ägypten" level="0" type="L"/>
+            <concept code="AX" codeSystem="1.2.40.0.34.5.96" displayName="Aland Islands" level="0" type="L"/>
+            <concept code="AL" codeSystem="1.2.40.0.34.5.96" displayName="Albanien" level="0" type="L"/>
+            <concept code="DZ" codeSystem="1.2.40.0.34.5.96" displayName="Algerien" level="0" type="L"/>
+            <concept code="AD" codeSystem="1.2.40.0.34.5.96" displayName="Andorra" level="0" type="L"/>
+            <concept code="AO" codeSystem="1.2.40.0.34.5.96" displayName="Angola" level="0" type="L"/>
+            <concept code="AI" codeSystem="1.2.40.0.34.5.96" displayName="Anguilla" level="0" type="L"/>
+            <concept code="AQ" codeSystem="1.2.40.0.34.5.96" displayName="Antarktis" level="0" type="L"/>
+            <concept code="AG" codeSystem="1.2.40.0.34.5.96" displayName="Antigua &amp; Barbuda" level="0" type="L"/>
+            <concept code="GQ" codeSystem="1.2.40.0.34.5.96" displayName="Äquatorial Guinea" level="0" type="L"/>
+            <concept code="AR" codeSystem="1.2.40.0.34.5.96" displayName="Argentinien" level="0" type="L"/>
+            <concept code="AM" codeSystem="1.2.40.0.34.5.96" displayName="Armenien" level="0" type="L"/>
+            <concept code="AW" codeSystem="1.2.40.0.34.5.96" displayName="Aruba" level="0" type="L"/>
+            <concept code="AZ" codeSystem="1.2.40.0.34.5.96" displayName="Aserbaidschan" level="0" type="L"/>
+            <concept code="ET" codeSystem="1.2.40.0.34.5.96" displayName="Äthiopien" level="0" type="L"/>
+            <concept code="AU" codeSystem="1.2.40.0.34.5.96" displayName="Australien" level="0" type="L"/>
+            <concept code="BS" codeSystem="1.2.40.0.34.5.96" displayName="Bahamas" level="0" type="L"/>
+            <concept code="BH" codeSystem="1.2.40.0.34.5.96" displayName="Bahrain" level="0" type="L"/>
+            <concept code="BD" codeSystem="1.2.40.0.34.5.96" displayName="Bangladesch" level="0" type="L"/>
+            <concept code="BB" codeSystem="1.2.40.0.34.5.96" displayName="Barbados" level="0" type="L"/>
+            <concept code="BY" codeSystem="1.2.40.0.34.5.96" displayName="Belarus" level="0" type="L"/>
+            <concept code="BE" codeSystem="1.2.40.0.34.5.96" displayName="Belgien" level="0" type="L"/>
+            <concept code="BZ" codeSystem="1.2.40.0.34.5.96" displayName="Belize" level="0" type="L"/>
+            <concept code="BJ" codeSystem="1.2.40.0.34.5.96" displayName="Benin" level="0" type="L"/>
+            <concept code="BM" codeSystem="1.2.40.0.34.5.96" displayName="Bermuda" level="0" type="L"/>
+            <concept code="BT" codeSystem="1.2.40.0.34.5.96" displayName="Bhutan" level="0" type="L"/>
+            <concept code="BO" codeSystem="1.2.40.0.34.5.96" displayName="Bolivien" level="0" type="L"/>
+            <concept code="BQ" codeSystem="1.2.40.0.34.5.96" displayName="Bonaire, Sint Eustatius und Saba" level="0" type="L"/>
+            <concept code="BA" codeSystem="1.2.40.0.34.5.96" displayName="Bosnien &amp; Herzegowina" level="0" type="L"/>
+            <concept code="BW" codeSystem="1.2.40.0.34.5.96" displayName="Botsuana" level="0" type="L"/>
+            <concept code="BV" codeSystem="1.2.40.0.34.5.96" displayName="Bouvetinsel" level="0" type="L"/>
+            <concept code="BR" codeSystem="1.2.40.0.34.5.96" displayName="Brasilien" level="0" type="L"/>
+            <concept code="IO" codeSystem="1.2.40.0.34.5.96" displayName="Brit. Territorium im Ind. Ozean" level="0" type="L"/>
+            <concept code="BN" codeSystem="1.2.40.0.34.5.96" displayName="Brunei Darussalam" level="0" type="L"/>
+            <concept code="BG" codeSystem="1.2.40.0.34.5.96" displayName="Bulgarien" level="0" type="L"/>
+            <concept code="BF" codeSystem="1.2.40.0.34.5.96" displayName="Burkina Faso" level="0" type="L"/>
+            <concept code="BI" codeSystem="1.2.40.0.34.5.96" displayName="Burundi" level="0" type="L"/>
+            <concept code="CT" codeSystem="1.2.40.0.34.5.96" displayName="Canton &amp; Enderburyinseln" level="0" type="L"/>
+            <concept code="XC" codeSystem="1.2.40.0.34.5.96" displayName="Ceuta " level="0" type="L"/>
+            <concept code="CL" codeSystem="1.2.40.0.34.5.96" displayName="Chile" level="0" type="L"/>
+            <concept code="CN" codeSystem="1.2.40.0.34.5.96" displayName="China" level="0" type="L"/>
+            <concept code="CK" codeSystem="1.2.40.0.34.5.96" displayName="Cook-Inseln" level="0" type="L"/>
+            <concept code="CR" codeSystem="1.2.40.0.34.5.96" displayName="Costa Rica" level="0" type="L"/>
+            <concept code="CW" codeSystem="1.2.40.0.34.5.96" displayName="Curacao" level="0" type="L"/>
+            <concept code="DK" codeSystem="1.2.40.0.34.5.96" displayName="Dänemark" level="0" type="L"/>
+            <concept code="DE" codeSystem="1.2.40.0.34.5.96" displayName="Deutschland" level="0" type="L"/>
+            <concept code="DM" codeSystem="1.2.40.0.34.5.96" displayName="Dominica" level="0" type="L"/>
+            <concept code="DO" codeSystem="1.2.40.0.34.5.96" displayName="Dominikanische Republik" level="0" type="L"/>
+            <concept code="DJ" codeSystem="1.2.40.0.34.5.96" displayName="Dschibuti" level="0" type="L"/>
+            <concept code="EC" codeSystem="1.2.40.0.34.5.96" displayName="Ecuador" level="0" type="L"/>
+            <concept code="SV" codeSystem="1.2.40.0.34.5.96" displayName="El Salvador" level="0" type="L"/>
+            <concept code="CI" codeSystem="1.2.40.0.34.5.96" displayName="Elfenbeinküste" level="0" type="L"/>
+            <concept code="ER" codeSystem="1.2.40.0.34.5.96" displayName="Eritrea" level="0" type="L"/>
+            <concept code="EE" codeSystem="1.2.40.0.34.5.96" displayName="Estland" level="0" type="L"/>
+            <concept code="FK" codeSystem="1.2.40.0.34.5.96" displayName="Falklandinseln" level="0" type="L"/>
+            <concept code="FO" codeSystem="1.2.40.0.34.5.96" displayName="Färoeer Inseln" level="0" type="L"/>
+            <concept code="FJ" codeSystem="1.2.40.0.34.5.96" displayName="Fidschi" level="0" type="L"/>
+            <concept code="FI" codeSystem="1.2.40.0.34.5.96" displayName="Finnland" level="0" type="L"/>
+            <concept code="FR" codeSystem="1.2.40.0.34.5.96" displayName="Frankreich" level="0" type="L"/>
+            <concept code="GF" codeSystem="1.2.40.0.34.5.96" displayName="Französisch Guayana" level="0" type="L"/>
+            <concept code="PF" codeSystem="1.2.40.0.34.5.96" displayName="Französisch Polynesien" level="0" type="L"/>
+            <concept code="TF" codeSystem="1.2.40.0.34.5.96" displayName="Französische Südgebiete" level="0" type="L"/>
+            <concept code="FQ" codeSystem="1.2.40.0.34.5.96" displayName="Französische Südpolargebiete" level="0" type="L"/>
+            <concept code="GA" codeSystem="1.2.40.0.34.5.96" displayName="Gabun" level="0" type="L"/>
+            <concept code="GM" codeSystem="1.2.40.0.34.5.96" displayName="Gambia" level="0" type="L"/>
+            <concept code="GE" codeSystem="1.2.40.0.34.5.96" displayName="Georgien" level="0" type="L"/>
+            <concept code="GH" codeSystem="1.2.40.0.34.5.96" displayName="Ghana" level="0" type="L"/>
+            <concept code="GI" codeSystem="1.2.40.0.34.5.96" displayName="Gibraltar" level="0" type="L"/>
+            <concept code="GD" codeSystem="1.2.40.0.34.5.96" displayName="Grenada" level="0" type="L"/>
+            <concept code="GR" codeSystem="1.2.40.0.34.5.96" displayName="Griechenland" level="0" type="L"/>
+            <concept code="GL" codeSystem="1.2.40.0.34.5.96" displayName="Grönland" level="0" type="L"/>
+            <concept code="UK" codeSystem="1.2.40.0.34.5.96" displayName="Großbritannien" level="0" type="L"/>
+            <concept code="GP" codeSystem="1.2.40.0.34.5.96" displayName="Guadeloupe" level="0" type="L"/>
+            <concept code="GU" codeSystem="1.2.40.0.34.5.96" displayName="Guam US-Verwaltung" level="0" type="L"/>
+            <concept code="GT" codeSystem="1.2.40.0.34.5.96" displayName="Guatemala" level="0" type="L"/>
+            <concept code="GG" codeSystem="1.2.40.0.34.5.96" displayName="Guernsey Insel" level="0" type="L"/>
+            <concept code="GN" codeSystem="1.2.40.0.34.5.96" displayName="Guinea" level="0" type="L"/>
+            <concept code="GW" codeSystem="1.2.40.0.34.5.96" displayName="Guinea-Bissau" level="0" type="L"/>
+            <concept code="GY" codeSystem="1.2.40.0.34.5.96" displayName="Guyana" level="0" type="L"/>
+            <concept code="HT" codeSystem="1.2.40.0.34.5.96" displayName="Haiti" level="0" type="L"/>
+            <concept code="HM" codeSystem="1.2.40.0.34.5.96" displayName="Heard &amp; McDonaldinseln" level="0" type="L"/>
+            <concept code="HN" codeSystem="1.2.40.0.34.5.96" displayName="Honduras" level="0" type="L"/>
+            <concept code="HK" codeSystem="1.2.40.0.34.5.96" displayName="Hongkong" level="0" type="L"/>
+            <concept code="IN" codeSystem="1.2.40.0.34.5.96" displayName="Indien" level="0" type="L"/>
+            <concept code="ID" codeSystem="1.2.40.0.34.5.96" displayName="Indonesien" level="0" type="L"/>
+            <concept code="IQ" codeSystem="1.2.40.0.34.5.96" displayName="Irak" level="0" type="L"/>
+            <concept code="IR" codeSystem="1.2.40.0.34.5.96" displayName="Iran" level="0" type="L"/>
+            <concept code="IE" codeSystem="1.2.40.0.34.5.96" displayName="Irland" level="0" type="L"/>
+            <concept code="IS" codeSystem="1.2.40.0.34.5.96" displayName="Island" level="0" type="L"/>
+            <concept code="IM" codeSystem="1.2.40.0.34.5.96" displayName="Isle of Man" level="0" type="L"/>
+            <concept code="IL" codeSystem="1.2.40.0.34.5.96" displayName="Israel" level="0" type="L"/>
+            <concept code="IT" codeSystem="1.2.40.0.34.5.96" displayName="Italien" level="0" type="L"/>
+            <concept code="JM" codeSystem="1.2.40.0.34.5.96" displayName="Jamaika" level="0" type="L"/>
+            <concept code="JP" codeSystem="1.2.40.0.34.5.96" displayName="Japan" level="0" type="L"/>
+            <concept code="YE" codeSystem="1.2.40.0.34.5.96" displayName="Jemen" level="0" type="L"/>
+            <concept code="JE" codeSystem="1.2.40.0.34.5.96" displayName="Jersey Insel" level="0" type="L"/>
+            <concept code="JT" codeSystem="1.2.40.0.34.5.96" displayName="Johnston Insel" level="0" type="L"/>
+            <concept code="JO" codeSystem="1.2.40.0.34.5.96" displayName="Jordanien" level="0" type="L"/>
+            <concept code="VG" codeSystem="1.2.40.0.34.5.96" displayName="Jungfern-Inseln Britisch " level="0" type="L"/>
+            <concept code="VI" codeSystem="1.2.40.0.34.5.96" displayName="Jungfern-Inseln USA" level="0" type="L"/>
+            <concept code="KY" codeSystem="1.2.40.0.34.5.96" displayName="Kaimaninseln" level="0" type="L"/>
+            <concept code="KH" codeSystem="1.2.40.0.34.5.96" displayName="Kambodscha" level="0" type="L"/>
+            <concept code="CM" codeSystem="1.2.40.0.34.5.96" displayName="Kamerun" level="0" type="L"/>
+            <concept code="CA" codeSystem="1.2.40.0.34.5.96" displayName="Kanada" level="0" type="L"/>
+            <concept code="IC" codeSystem="1.2.40.0.34.5.96" displayName="Kanarische Inseln" level="0" type="L"/>
+            <concept code="CV" codeSystem="1.2.40.0.34.5.96" displayName="Kap Verde" level="0" type="L"/>
+            <concept code="KZ" codeSystem="1.2.40.0.34.5.96" displayName="Kasachstan" level="0" type="L"/>
+            <concept code="QA" codeSystem="1.2.40.0.34.5.96" displayName="Katar" level="0" type="L"/>
+            <concept code="KE" codeSystem="1.2.40.0.34.5.96" displayName="Kenia" level="0" type="L"/>
+            <concept code="KG" codeSystem="1.2.40.0.34.5.96" displayName="Kirgisistan" level="0" type="L"/>
+            <concept code="KI" codeSystem="1.2.40.0.34.5.96" displayName="Kiribati" level="0" type="L"/>
+            <concept code="CC" codeSystem="1.2.40.0.34.5.96" displayName="Kokosinseln" level="0" type="L"/>
+            <concept code="CO" codeSystem="1.2.40.0.34.5.96" displayName="Kolumbien" level="0" type="L"/>
+            <concept code="KM" codeSystem="1.2.40.0.34.5.96" displayName="Komoren" level="0" type="L"/>
+            <concept code="CG" codeSystem="1.2.40.0.34.5.96" displayName="Kongo" level="0" type="L"/>
+            <concept code="CD" codeSystem="1.2.40.0.34.5.96" displayName="Kongo, Demokr. Republik" level="0" type="L"/>
+            <concept code="KP" codeSystem="1.2.40.0.34.5.96" displayName="Korea, Demokr. Volksrepublik" level="0" type="L"/>
+            <concept code="KR" codeSystem="1.2.40.0.34.5.96" displayName="Korea, Republik von" level="0" type="L"/>
+            <concept code="XK" codeSystem="1.2.40.0.34.5.96" displayName="Kosovo" level="0" type="L"/>
+            <concept code="HR" codeSystem="1.2.40.0.34.5.96" displayName="Kroatien" level="0" type="L"/>
+            <concept code="CU" codeSystem="1.2.40.0.34.5.96" displayName="Kuba" level="0" type="L"/>
+            <concept code="KW" codeSystem="1.2.40.0.34.5.96" displayName="Kuwait" level="0" type="L"/>
+            <concept code="LA" codeSystem="1.2.40.0.34.5.96" displayName="Laos" level="0" type="L"/>
+            <concept code="LS" codeSystem="1.2.40.0.34.5.96" displayName="Lesotho" level="0" type="L"/>
+            <concept code="LV" codeSystem="1.2.40.0.34.5.96" displayName="Lettland" level="0" type="L"/>
+            <concept code="LB" codeSystem="1.2.40.0.34.5.96" displayName="Libanon" level="0" type="L"/>
+            <concept code="LR" codeSystem="1.2.40.0.34.5.96" displayName="Liberien" level="0" type="L"/>
+            <concept code="LY" codeSystem="1.2.40.0.34.5.96" displayName="Libysch-Arab. Dschamahirija" level="0" type="L"/>
+            <concept code="LI" codeSystem="1.2.40.0.34.5.96" displayName="Liechtenstein" level="0" type="L"/>
+            <concept code="LT" codeSystem="1.2.40.0.34.5.96" displayName="Litauen" level="0" type="L"/>
+            <concept code="LU" codeSystem="1.2.40.0.34.5.96" displayName="Luxemburg" level="0" type="L"/>
+            <concept code="MO" codeSystem="1.2.40.0.34.5.96" displayName="Macao" level="0" type="L"/>
+            <concept code="MG" codeSystem="1.2.40.0.34.5.96" displayName="Madagaskar" level="0" type="L"/>
+            <concept code="MW" codeSystem="1.2.40.0.34.5.96" displayName="Malawi" level="0" type="L"/>
+            <concept code="MY" codeSystem="1.2.40.0.34.5.96" displayName="Malaysia" level="0" type="L"/>
+            <concept code="MV" codeSystem="1.2.40.0.34.5.96" displayName="Malediven" level="0" type="L"/>
+            <concept code="ML" codeSystem="1.2.40.0.34.5.96" displayName="Mali" level="0" type="L"/>
+            <concept code="MT" codeSystem="1.2.40.0.34.5.96" displayName="Malta" level="0" type="L"/>
+            <concept code="MA" codeSystem="1.2.40.0.34.5.96" displayName="Marokko" level="0" type="L"/>
+            <concept code="MH" codeSystem="1.2.40.0.34.5.96" displayName="Marshall Inseln" level="0" type="L"/>
+            <concept code="MQ" codeSystem="1.2.40.0.34.5.96" displayName="Martinique" level="0" type="L"/>
+            <concept code="MR" codeSystem="1.2.40.0.34.5.96" displayName="Mauretanien" level="0" type="L"/>
+            <concept code="MU" codeSystem="1.2.40.0.34.5.96" displayName="Mauritius" level="0" type="L"/>
+            <concept code="YT" codeSystem="1.2.40.0.34.5.96" displayName="Mayotte" level="0" type="L"/>
+            <concept code="MK" codeSystem="1.2.40.0.34.5.96" displayName="Mazedonien" level="0" type="L"/>
+            <concept code="XL" codeSystem="1.2.40.0.34.5.96" displayName="Mellila" level="0" type="L"/>
+            <concept code="MX" codeSystem="1.2.40.0.34.5.96" displayName="Mexiko" level="0" type="L"/>
+            <concept code="MI" codeSystem="1.2.40.0.34.5.96" displayName="Midway Inseln" level="0" type="L"/>
+            <concept code="FM" codeSystem="1.2.40.0.34.5.96" displayName="Mikronesien" level="0" type="L"/>
+            <concept code="MD" codeSystem="1.2.40.0.34.5.96" displayName="Moldau, Republik" level="0" type="L"/>
+            <concept code="MC" codeSystem="1.2.40.0.34.5.96" displayName="Monaco" level="0" type="L"/>
+            <concept code="MN" codeSystem="1.2.40.0.34.5.96" displayName="Mongolei" level="0" type="L"/>
+            <concept code="ME" codeSystem="1.2.40.0.34.5.96" displayName="Montenegro" level="0" type="L"/>
+            <concept code="MS" codeSystem="1.2.40.0.34.5.96" displayName="Montserrat" level="0" type="L"/>
+            <concept code="MZ" codeSystem="1.2.40.0.34.5.96" displayName="Mosambik" level="0" type="L"/>
+            <concept code="MM" codeSystem="1.2.40.0.34.5.96" displayName="Myanmar" level="0" type="L"/>
+            <concept code="NA" codeSystem="1.2.40.0.34.5.96" displayName="Namibia" level="0" type="L"/>
+            <concept code="NR" codeSystem="1.2.40.0.34.5.96" displayName="Nauru" level="0" type="L"/>
+            <concept code="NP" codeSystem="1.2.40.0.34.5.96" displayName="Nepal" level="0" type="L"/>
+            <concept code="NC" codeSystem="1.2.40.0.34.5.96" displayName="Neukaledonien" level="0" type="L"/>
+            <concept code="NZ" codeSystem="1.2.40.0.34.5.96" displayName="Neuseeland" level="0" type="L"/>
+            <concept code="NI" codeSystem="1.2.40.0.34.5.96" displayName="Nicaragua" level="0" type="L"/>
+            <concept code="NL" codeSystem="1.2.40.0.34.5.96" displayName="Niederlande" level="0" type="L"/>
+            <concept code="AN" codeSystem="1.2.40.0.34.5.96" displayName="Niederländische Antillen" level="0" type="L"/>
+            <concept code="NE" codeSystem="1.2.40.0.34.5.96" displayName="Niger" level="0" type="L"/>
+            <concept code="NG" codeSystem="1.2.40.0.34.5.96" displayName="Nigeria" level="0" type="L"/>
+            <concept code="NU" codeSystem="1.2.40.0.34.5.96" displayName="Niue" level="0" type="L"/>
+            <concept code="MP" codeSystem="1.2.40.0.34.5.96" displayName="Nördliche Marianen" level="0" type="L"/>
+            <concept code="NF" codeSystem="1.2.40.0.34.5.96" displayName="Norfolkinsel" level="0" type="L"/>
+            <concept code="NO" codeSystem="1.2.40.0.34.5.96" displayName="Norwegen" level="0" type="L"/>
+            <concept code="OM" codeSystem="1.2.40.0.34.5.96" displayName="Oman" level="0" type="L"/>
+            <concept code="PK" codeSystem="1.2.40.0.34.5.96" displayName="Pakistan" level="0" type="L"/>
+            <concept code="PS" codeSystem="1.2.40.0.34.5.96" displayName="Palästina, Besetzt" level="0" type="L"/>
+            <concept code="PW" codeSystem="1.2.40.0.34.5.96" displayName="Palau" level="0" type="L"/>
+            <concept code="PA" codeSystem="1.2.40.0.34.5.96" displayName="Panama" level="0" type="L"/>
+            <concept code="PZ" codeSystem="1.2.40.0.34.5.96" displayName="Panama Kanalzone" level="0" type="L"/>
+            <concept code="PG" codeSystem="1.2.40.0.34.5.96" displayName="Papua Neuguinea" level="0" type="L"/>
+            <concept code="PY" codeSystem="1.2.40.0.34.5.96" displayName="Paraguay" level="0" type="L"/>
+            <concept code="PU" codeSystem="1.2.40.0.34.5.96" displayName="Pazifische Inseln US" level="0" type="L"/>
+            <concept code="PE" codeSystem="1.2.40.0.34.5.96" displayName="Peru" level="0" type="L"/>
+            <concept code="PH" codeSystem="1.2.40.0.34.5.96" displayName="Philippinen" level="0" type="L"/>
+            <concept code="PN" codeSystem="1.2.40.0.34.5.96" displayName="Pitcairn Inseln" level="0" type="L"/>
+            <concept code="PL" codeSystem="1.2.40.0.34.5.96" displayName="Polen" level="0" type="L"/>
+            <concept code="PT" codeSystem="1.2.40.0.34.5.96" displayName="Portugal" level="0" type="L"/>
+            <concept code="PR" codeSystem="1.2.40.0.34.5.96" displayName="Puerto Rico" level="0" type="L"/>
+            <concept code="RE" codeSystem="1.2.40.0.34.5.96" displayName="Réunion" level="0" type="L"/>
+            <concept code="RW" codeSystem="1.2.40.0.34.5.96" displayName="Ruanda" level="0" type="L"/>
+            <concept code="RO" codeSystem="1.2.40.0.34.5.96" displayName="Rumänien" level="0" type="L"/>
+            <concept code="RU" codeSystem="1.2.40.0.34.5.96" displayName="Russische Föderation" level="0" type="L"/>
+            <concept code="BL" codeSystem="1.2.40.0.34.5.96" displayName="Saint Barthelemy" level="0" type="L"/>
+            <concept code="MF" codeSystem="1.2.40.0.34.5.96" displayName="Saint Martin (französischer Teil)" level="0" type="L"/>
+            <concept code="SB" codeSystem="1.2.40.0.34.5.96" displayName="Salomonen" level="0" type="L"/>
+            <concept code="ZM" codeSystem="1.2.40.0.34.5.96" displayName="Sambia" level="0" type="L"/>
+            <concept code="AS" codeSystem="1.2.40.0.34.5.96" displayName="Samoa-Amerikanisch" level="0" type="L"/>
+            <concept code="WS" codeSystem="1.2.40.0.34.5.96" displayName="Samoa-West" level="0" type="L"/>
+            <concept code="SM" codeSystem="1.2.40.0.34.5.96" displayName="San Marino" level="0" type="L"/>
+            <concept code="ST" codeSystem="1.2.40.0.34.5.96" displayName="São Tomé &amp; Príncipe" level="0" type="L"/>
+            <concept code="SA" codeSystem="1.2.40.0.34.5.96" displayName="Saudi-Arabien" level="0" type="L"/>
+            <concept code="SE" codeSystem="1.2.40.0.34.5.96" displayName="Schweden" level="0" type="L"/>
+            <concept code="CH" codeSystem="1.2.40.0.34.5.96" displayName="Schweiz" level="0" type="L"/>
+            <concept code="SN" codeSystem="1.2.40.0.34.5.96" displayName="Senegal" level="0" type="L"/>
+            <concept code="RS" codeSystem="1.2.40.0.34.5.96" displayName="Serbien" level="0" type="L"/>
+            <concept code="SC" codeSystem="1.2.40.0.34.5.96" displayName="Seychellen" level="0" type="L"/>
+            <concept code="SL" codeSystem="1.2.40.0.34.5.96" displayName="Sierra Leone" level="0" type="L"/>
+            <concept code="ZW" codeSystem="1.2.40.0.34.5.96" displayName="Simbabwe" level="0" type="L"/>
+            <concept code="SG" codeSystem="1.2.40.0.34.5.96" displayName="Singapur" level="0" type="L"/>
+            <concept code="SX" codeSystem="1.2.40.0.34.5.96" displayName="Sint Maarten (hollländischer Teil)" level="0" type="L"/>
+            <concept code="SK" codeSystem="1.2.40.0.34.5.96" displayName="Slowakei" level="0" type="L"/>
+            <concept code="SI" codeSystem="1.2.40.0.34.5.96" displayName="Slowenien" level="0" type="L"/>
+            <concept code="SO" codeSystem="1.2.40.0.34.5.96" displayName="Somalia" level="0" type="L"/>
+            <concept code="ES" codeSystem="1.2.40.0.34.5.96" displayName="Spanien" level="0" type="L"/>
+            <concept code="SJ" codeSystem="1.2.40.0.34.5.96" displayName="Spitzbergen &amp; Jan Mayen Inseln" level="0" type="L"/>
+            <concept code="LK" codeSystem="1.2.40.0.34.5.96" displayName="Sri Lanka" level="0" type="L"/>
+            <concept code="SH" codeSystem="1.2.40.0.34.5.96" displayName="St. Helena" level="0" type="L"/>
+            <concept code="KN" codeSystem="1.2.40.0.34.5.96" displayName="St. Kitts &amp; Nevis" level="0" type="L"/>
+            <concept code="LC" codeSystem="1.2.40.0.34.5.96" displayName="St. Lucia" level="0" type="L"/>
+            <concept code="PM" codeSystem="1.2.40.0.34.5.96" displayName="St. Pierre &amp; Miquelon" level="0" type="L"/>
+            <concept code="VC" codeSystem="1.2.40.0.34.5.96" displayName="St. Vincent &amp; Grenadinen" level="0" type="L"/>
+            <concept code="ZA" codeSystem="1.2.40.0.34.5.96" displayName="Südafrika" level="0" type="L"/>
+            <concept code="SD" codeSystem="1.2.40.0.34.5.96" displayName="Sudan" level="0" type="L"/>
+            <concept code="GS" codeSystem="1.2.40.0.34.5.96" displayName="Südgeorgien &amp; südl. Sandwich-I." level="0" type="L"/>
+            <concept code="SR" codeSystem="1.2.40.0.34.5.96" displayName="Suriname" level="0" type="L"/>
+            <concept code="SZ" codeSystem="1.2.40.0.34.5.96" displayName="Swasiland" level="0" type="L"/>
+            <concept code="SY" codeSystem="1.2.40.0.34.5.96" displayName="Syrien" level="0" type="L"/>
+            <concept code="TJ" codeSystem="1.2.40.0.34.5.96" displayName="Tadschikistan" level="0" type="L"/>
+            <concept code="TW" codeSystem="1.2.40.0.34.5.96" displayName="Taiwan" level="0" type="L"/>
+            <concept code="TZ" codeSystem="1.2.40.0.34.5.96" displayName="Tansania, Vereinigte Republik" level="0" type="L"/>
+            <concept code="TH" codeSystem="1.2.40.0.34.5.96" displayName="Thailand" level="0" type="L"/>
+            <concept code="TL" codeSystem="1.2.40.0.34.5.96" displayName="Timor-Leste" level="0" type="L"/>
+            <concept code="TG" codeSystem="1.2.40.0.34.5.96" displayName="Togo" level="0" type="L"/>
+            <concept code="TK" codeSystem="1.2.40.0.34.5.96" displayName="Tokelau" level="0" type="L"/>
+            <concept code="TO" codeSystem="1.2.40.0.34.5.96" displayName="Tonga" level="0" type="L"/>
+            <concept code="TT" codeSystem="1.2.40.0.34.5.96" displayName="Trinidad &amp; Tobago" level="0" type="L"/>
+            <concept code="TD" codeSystem="1.2.40.0.34.5.96" displayName="Tschad" level="0" type="L"/>
+            <concept code="CZ" codeSystem="1.2.40.0.34.5.96" displayName="Tschechische Republik" level="0" type="L"/>
+            <concept code="TN" codeSystem="1.2.40.0.34.5.96" displayName="Tunesien" level="0" type="L"/>
+            <concept code="TR" codeSystem="1.2.40.0.34.5.96" displayName="Türkei" level="0" type="L"/>
+            <concept code="TM" codeSystem="1.2.40.0.34.5.96" displayName="Turkmenistan" level="0" type="L"/>
+            <concept code="TC" codeSystem="1.2.40.0.34.5.96" displayName="Turks- &amp; Caicosinseln" level="0" type="L"/>
+            <concept code="TV" codeSystem="1.2.40.0.34.5.96" displayName="Tuvalu" level="0" type="L"/>
+            <concept code="UG" codeSystem="1.2.40.0.34.5.96" displayName="Uganda" level="0" type="L"/>
+            <concept code="UA" codeSystem="1.2.40.0.34.5.96" displayName="Ukraine" level="0" type="L"/>
+            <concept code="HU" codeSystem="1.2.40.0.34.5.96" displayName="Ungarn" level="0" type="L"/>
+            <concept code="UY" codeSystem="1.2.40.0.34.5.96" displayName="Uruguay" level="0" type="L"/>
+            <concept code="UM" codeSystem="1.2.40.0.34.5.96" displayName="USA (sonstige kleine Inseln)" level="0" type="L"/>
+            <concept code="UZ" codeSystem="1.2.40.0.34.5.96" displayName="Usbekistan" level="0" type="L"/>
+            <concept code="VU" codeSystem="1.2.40.0.34.5.96" displayName="Vanuatu" level="0" type="L"/>
+            <concept code="VA" codeSystem="1.2.40.0.34.5.96" displayName="Vatikan" level="0" type="L"/>
+            <concept code="VE" codeSystem="1.2.40.0.34.5.96" displayName="Venezuela" level="0" type="L"/>
+            <concept code="AE" codeSystem="1.2.40.0.34.5.96" displayName="Vereinigte Arabische Emirate" level="0" type="L"/>
+            <concept code="US" codeSystem="1.2.40.0.34.5.96" displayName="Vereinigte Staaten" level="0" type="L"/>
+            <concept code="VN" codeSystem="1.2.40.0.34.5.96" displayName="Vietnam" level="0" type="L"/>
+            <concept code="WK" codeSystem="1.2.40.0.34.5.96" displayName="Wake Insel" level="0" type="L"/>
+            <concept code="WF" codeSystem="1.2.40.0.34.5.96" displayName="Wallis und Futuna" level="0" type="L"/>
+            <concept code="CX" codeSystem="1.2.40.0.34.5.96" displayName="Weihnachtsinsel" level="0" type="L"/>
+            <concept code="EH" codeSystem="1.2.40.0.34.5.96" displayName="Westsahara Eigenständiger Staat" level="0" type="L"/>
+            <concept code="CF" codeSystem="1.2.40.0.34.5.96" displayName="Zentralafrikanische Republik" level="0" type="L"/>
+            <concept code="CY" codeSystem="1.2.40.0.34.5.96" displayName="Zypern" level="0" type="L"/>
+            <concept code="YU" codeSystem="1.2.40.0.34.5.96" displayName="Ex-Jugoslawien" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

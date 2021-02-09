@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.10.184" name="atcdabbr_ConditionVerificationStatus_VS" displayName="atcdabbr_ConditionVerificationStatus_VS" effectiveDate="2020-02-04T00:00:00" statusCode="draft" versionLabel="202002(-beta)" url="http://art-decor.org/decor/services/" ident="at-cda-bbr-" referencedFrom="epims-">
+        <desc language="de-DE">
+            <span style="color: rgb(51, 51, 51); font-family: sans-serif; font-size: 12px;">Sicherheit, mit der ein Problem besteht.</span>
+            <br clear="none"/>
+            <br clear="none"/>Alternative Codierung SNOMED<br clear="none"/>
+            <div>
+                <br clear="none"/>
+            </div>
+            <div>38434005 |No confirmation of (contextual qualifier) (qualifier value)|</div>
+            <div>261420005 |Preliminary (qualifier value)|</div>
+            <div>263735002 |Differential (qualifier value)|</div>
+            <div>74996004 |Confirmation of (contextual qualifier) (qualifier value)|</div>
+            <div>723511001 |Refuted (qualifier value)|</div>
+            <div>
+                <br clear="none"/>
+            </div>
+        </desc>
+        <desc language="en-US">Verification Status of a Problem<i/>
+        </desc>
+        <sourceCodeSystem id="2.16.840.1.113883.4.642.3.166" identifierName="RestfulCapabilityMode" canonicalUri="http://hl7.org/fhir/ValueSet/condition-ver-status" canonicalUriDSTU2="http://hl7.org/fhir/ValueSet/condition-ver-status" canonicalUriSTU3="http://hl7.org/fhir/ValueSet/restful-capability-mode" canonicalUriR4="http://hl7.org/fhir/ValueSet/condition-ver-status"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="unconfirmed" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="unconfirmed" level="0" type="S"/>
+            <concept code="provisional" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="provisional" level="1" type="L"/>
+            <concept code="differential" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="differential" level="1" type="L"/>
+            <concept code="confirmed" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="confirmed" level="0" type="L"/>
+            <concept code="refuted" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="refuted" level="0" type="L"/>
+            <concept code="entered-in-error" codeSystem="2.16.840.1.113883.4.642.3.166" displayName="Entered in Error" level="0" type="L">
+                <desc language="de-DE">
+                    <table class="codes">
+                        <tbody>
+                            <tr>
+                                <td colspan="1" rowspan="1"/>
+                                <td colspan="1" rowspan="1">The statement was entered in error and is not valid.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </desc>
+            </concept>
+        </conceptList>
+    </valueSet>
+</valueSets>

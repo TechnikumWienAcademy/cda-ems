@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.6.0.10.19" name="epims_meldepflichtigeKrankheiten" displayName="EMS Meldepflichtige Krankheiten VS" effectiveDate="2020-02-25T16:30:38" statusCode="draft" versionLabel="2020">
+        <sourceCodeSystem id="1.2.40.0.34.5.171" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.171" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.171" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.171" canonicalUriR4="urn:oid:1.2.40.0.34.5.171"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.187" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.187" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.187" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.187" canonicalUriR4="urn:oid:1.2.40.0.34.5.187"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.184" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.184" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.184" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.184" canonicalUriR4="urn:oid:1.2.40.0.34.5.184"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="A00" codeSystem="1.2.40.0.34.5.171" displayName="Cholera" level="0" type="L"/>
+            <concept code="A01.0" codeSystem="1.2.40.0.34.5.171" displayName="Typhus abdominalis" level="0" type="L"/>
+            <concept code="A01.4" codeSystem="1.2.40.0.34.5.171" displayName="Paratyphus" level="0" type="L"/>
+            <concept code="A02" codeSystem="1.2.40.0.34.5.171" displayName="Salmonella spp." level="0" type="L"/>
+            <concept code="A03" codeSystem="1.2.40.0.34.5.171" displayName="Shigellose" level="0" type="L"/>
+            <concept code="A04.0" codeSystem="1.2.40.0.34.5.171" displayName="E.-coli-Enteritis, sonstige darmpathogene Stämme" level="0" type="L"/>
+            <concept code="A04.3" codeSystem="1.2.40.0.34.5.171" displayName="STEC/VTEC" level="0" type="L"/>
+            <concept code="A04.5" codeSystem="1.2.40.0.34.5.171" displayName="Campylobakter spp., darmpathogen" level="0" type="L"/>
+            <concept code="A04.6" codeSystem="1.2.40.0.34.5.171" displayName="Yersiniose" level="0" type="L"/>
+            <concept code="A05.0" codeSystem="1.2.40.0.34.5.171" displayName="Staphylokokkus aureus" level="0" type="L"/>
+            <concept code="A05.1" codeSystem="1.2.40.0.34.5.171" displayName="Botulismus" level="0" type="L"/>
+            <concept code="A05.8" codeSystem="1.2.40.0.34.5.171" displayName="sonstige bakterielle Lebensmittelvergiftung" level="0" type="L"/>
+            <concept code="A06" codeSystem="1.2.40.0.34.5.171" displayName="Amöbenruhr" level="0" type="L"/>
+            <concept code="A08.0" codeSystem="1.2.40.0.34.5.171" displayName="Rotavirus" level="0" type="L"/>
+            <concept code="A08.1" codeSystem="1.2.40.0.34.5.171" displayName="Norovirus" level="0" type="L"/>
+            <concept code="A08.5" codeSystem="1.2.40.0.34.5.171" displayName="sonstige virale Lebensmittelvergiftung" level="0" type="L"/>
+            <concept code="A15" codeSystem="1.2.40.0.34.5.171" displayName="Tuberkulose" level="0" type="L"/>
+            <concept code="A20" codeSystem="1.2.40.0.34.5.171" displayName="Pest" level="0" type="L"/>
+            <concept code="A21" codeSystem="1.2.40.0.34.5.171" displayName="Tularämie" level="0" type="L"/>
+            <concept code="A22" codeSystem="1.2.40.0.34.5.171" displayName="Milzbrand" level="0" type="L"/>
+            <concept code="A23" codeSystem="1.2.40.0.34.5.171" displayName="Brucellose" level="0" type="L"/>
+            <concept code="A24.0" codeSystem="1.2.40.0.34.5.171" displayName="Rotz" level="0" type="L"/>
+            <concept code="A27" codeSystem="1.2.40.0.34.5.171" displayName="Leptospirose" level="0" type="L"/>
+            <concept code="A30" codeSystem="1.2.40.0.34.5.171" displayName="Lepra" level="0" type="L"/>
+            <concept code="A32" codeSystem="1.2.40.0.34.5.171" displayName="Listeriose" level="0" type="L"/>
+            <concept code="A36" codeSystem="1.2.40.0.34.5.171" displayName="Diphtherie" level="0" type="L"/>
+            <concept code="A37" codeSystem="1.2.40.0.34.5.171" displayName="Pertussis" level="0" type="L"/>
+            <concept code="A38" codeSystem="1.2.40.0.34.5.171" displayName="Scharlach" level="0" type="L"/>
+            <concept code="A39" codeSystem="1.2.40.0.34.5.171" displayName="Meningokokken-Erkrankung, invasiv" level="0" type="L"/>
+            <concept code="A39.4" codeSystem="1.2.40.0.34.5.171" displayName="sonstige Sepsis (invasive bakt.Erkrankung)" level="0" type="L"/>
+            <concept code="A40.3" codeSystem="1.2.40.0.34.5.171" displayName="Pneumokokken-Erkrankung, invasiv" level="0" type="L"/>
+            <concept code="A48.1" codeSystem="1.2.40.0.34.5.171" displayName="Legionellose" level="0" type="L"/>
+            <concept code="A68.0" codeSystem="1.2.40.0.34.5.171" displayName="Läuserückfallfieber" level="0" type="L"/>
+            <concept code="A70" codeSystem="1.2.40.0.34.5.171" displayName="Psittakose" level="0" type="L"/>
+            <concept code="A71" codeSystem="1.2.40.0.34.5.171" displayName="Körnerkrankheit" level="0" type="L"/>
+            <concept code="A75.0" codeSystem="1.2.40.0.34.5.171" displayName="Fleckfieber" level="0" type="L"/>
+            <concept code="A80" codeSystem="1.2.40.0.34.5.171" displayName="Poliomyelitis" level="0" type="L"/>
+            <concept code="A81.0" codeSystem="1.2.40.0.34.5.171" displayName="Creutzfeldt-Jakob-Krankheit (CJD)" level="0" type="L"/>
+            <concept code="A81.9" codeSystem="1.2.40.0.34.5.171" displayName="Variante Creutzfeldt-Jakob-Krankheit (vCJD)" level="0" type="L"/>
+            <concept code="A81.9a" codeSystem="1.2.40.0.34.5.187" displayName="sonstige transmissible spongiforme Enzephalopathie" level="0" type="L"/>
+            <concept code="A82" codeSystem="1.2.40.0.34.5.171" displayName="Tollwut" level="0" type="L"/>
+            <concept code="A84.1" codeSystem="1.2.40.0.34.5.171" displayName="FSME" level="0" type="L"/>
+            <concept code="A86" codeSystem="1.2.40.0.34.5.171" displayName="sonstige virusbedingte Meningoencephalitis" level="0" type="L"/>
+            <concept code="A92.0" codeSystem="1.2.40.0.34.5.171" displayName="Chikungunya-Fieber" level="0" type="L"/>
+            <concept code="A92.3" codeSystem="1.2.40.0.34.5.171" displayName="West-Nil Fieber" level="0" type="L"/>
+            <concept code="A92.8" codeSystem="1.2.40.0.34.5.171" displayName="Zika Virus" level="0" type="L"/>
+            <concept code="A95" codeSystem="1.2.40.0.34.5.171" displayName="Gelbfieber" level="0" type="L"/>
+            <concept code="A96.2" codeSystem="1.2.40.0.34.5.171" displayName="Lassafieber" level="0" type="L"/>
+            <concept code="A97" codeSystem="1.2.40.0.34.5.171" displayName="Denguefieber" level="0" type="L"/>
+            <concept code="A98.0" codeSystem="1.2.40.0.34.5.171" displayName="Krim Kongo Fieber" level="0" type="L"/>
+            <concept code="A98.3" codeSystem="1.2.40.0.34.5.171" displayName="Marburgfieber" level="0" type="L"/>
+            <concept code="A98.4" codeSystem="1.2.40.0.34.5.171" displayName="Ebolafieber" level="0" type="L"/>
+            <concept code="A98.5" codeSystem="1.2.40.0.34.5.171" displayName="Hantavirus" level="0" type="L"/>
+            <concept code="B03" codeSystem="1.2.40.0.34.5.171" displayName="Pocken" level="0" type="L"/>
+            <concept code="B05" codeSystem="1.2.40.0.34.5.171" displayName="Masern" level="0" type="L"/>
+            <concept code="B06" codeSystem="1.2.40.0.34.5.171" displayName="Röteln" level="0" type="L"/>
+            <concept code="B15" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis A" level="0" type="L"/>
+            <concept code="B16" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis B" level="0" type="L"/>
+            <concept code="B17.0" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis D" level="0" type="L"/>
+            <concept code="B17.1" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis C" level="0" type="L"/>
+            <concept code="B17.2" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis E" level="0" type="L"/>
+            <concept code="B17.8" codeSystem="1.2.40.0.34.5.171" displayName="Hepatitis non A-E" level="0" type="L"/>
+            <concept code="B34.2" codeSystem="1.2.40.0.34.5.171" displayName="Neuartige Coronavirus Infektion (2019-nCoV)" level="0" type="L"/>
+            <concept code="B54" codeSystem="1.2.40.0.34.5.171" displayName="Malaria" level="0" type="L"/>
+            <concept code="B67.4" codeSystem="1.2.40.0.34.5.171" displayName="Hundebandwurm" level="0" type="L"/>
+            <concept code="B67.7" codeSystem="1.2.40.0.34.5.171" displayName="Fuchsbandwurm" level="0" type="L"/>
+            <concept code="B75" codeSystem="1.2.40.0.34.5.171" displayName="Trichinellose" level="0" type="L"/>
+            <concept code="G00.0" codeSystem="1.2.40.0.34.5.171" displayName="Haemophilus influenzae" level="0" type="L"/>
+            <concept code="G00.9" codeSystem="1.2.40.0.34.5.171" displayName="sonstige Meningitis (invasive bakt.Erkrankung)" level="0" type="L"/>
+            <concept code="J09a" codeSystem="1.2.40.0.34.5.187" displayName="A/H1N1-Virus (Neue Influenza A)" level="0" type="L"/>
+            <concept code="J09b" codeSystem="1.2.40.0.34.5.187" displayName="A/H5N1-Virus (Vogelgrippe)" level="0" type="L"/>
+            <concept code="J09c" codeSystem="1.2.40.0.34.5.187" displayName="A/H7N9-Virus" level="0" type="L"/>
+            <concept code="J09d" codeSystem="1.2.40.0.34.5.187" displayName="MERS-CoV" level="0" type="L"/>
+            <concept code="K52.9" codeSystem="1.2.40.0.34.5.171" displayName="Clostridium difficile" level="0" type="L"/>
+            <concept code="O85" codeSystem="1.2.40.0.34.5.171" displayName="Clostridium difficile" level="0" type="L"/>
+            <concept code="P36.0" codeSystem="1.2.40.0.34.5.171" displayName="Puerperalfieber" level="0" type="L"/>
+            <concept code="U04" codeSystem="1.2.40.0.34.5.171" displayName="SARS" level="0" type="L"/>
+            <concept code="U07.1" codeSystem="1.2.40.0.34.5.184" displayName="Coronavirus-Krankheit-2019" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.10.201" name="ELGA_Problems" displayName="ELGA_Problems" effectiveDate="2017-09-06T21:31:37" statusCode="draft" url="http://art-decor.org/decor/services/" ident="elgaps-" referencedFrom="at-cda-bbr-">
+        <sourceCodeSystem id="2.16.840.1.113883.6.254" identifierName="International&#160;Classification&#160;of&#160;Function" canonicalUri="http://hl7.org/fhir/sid/icf-nl" canonicalUriDSTU2="http://hl7.org/fhir/sid/icf-nl" canonicalUriSTU3="http://hl7.org/fhir/sid/icf-nl" canonicalUriR4="http://hl7.org/fhir/sid/icf-nl"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.184" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.184" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.184" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.184" canonicalUriR4="urn:oid:1.2.40.0.34.5.184"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.175" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.175" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.175" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.175" canonicalUriR4="urn:oid:1.2.40.0.34.5.175"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.171" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.171" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.171" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.171" canonicalUriR4="urn:oid:1.2.40.0.34.5.171"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.56" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.56" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.56" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.56" canonicalUriR4="urn:oid:1.2.40.0.34.5.56"/>
+        <sourceCodeSystem id="1.2.40.0.34.5.174" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.174" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.174" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.174" canonicalUriR4="urn:oid:1.2.40.0.34.5.174"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.43.1" identifierName="International&#160;Classification&#160;of&#160;Diseases&#160;for&#160;Oncology,&#160;version&#160;3." canonicalUri="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriSTU3="urn:oid:2.16.840.1.113883.6.43.1" canonicalUriR4="urn:oid:2.16.840.1.113883.6.43.1"/>
+        <sourceCodeSystem id="2.16.840.1.113883.6.96" identifierName="SNOMED&#160;Clinical&#160;Terms" canonicalUri="http://snomed.info/sct" canonicalUriDSTU2="http://snomed.info/sct" canonicalUriSTU3="http://snomed.info/sct" canonicalUriR4="http://snomed.info/sct"/>
+        <sourceCodeSystem id="2.16.840.1.113883.15.6" identifierName="TNM&#160;Edition7&#160;UICC" canonicalUri="urn:oid:2.16.840.1.113883.15.6" canonicalUriDSTU2="urn:oid:2.16.840.1.113883.15.6" canonicalUriSTU3="urn:oid:2.16.840.1.113883.15.6" canonicalUriR4="urn:oid:2.16.840.1.113883.15.6"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <copyright language="en-US">This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.</copyright>
+        <completeCodeSystem codeSystem="2.16.840.1.113883.6.254" codeSystemName="International&#160;Classification&#160;of&#160;Function"/>
+        <completeCodeSystem codeSystem="1.2.40.0.34.5.184"/>
+        <completeCodeSystem codeSystem="1.2.40.0.34.5.175"/>
+        <completeCodeSystem codeSystem="1.2.40.0.34.5.171"/>
+        <completeCodeSystem codeSystem="1.2.40.0.34.5.56"/>
+        <completeCodeSystem codeSystem="1.2.40.0.34.5.174"/>
+        <completeCodeSystem codeSystem="2.16.840.1.113883.6.43.1" codeSystemName="International&#160;Classification&#160;of&#160;Diseases&#160;for&#160;Oncology,&#160;version&#160;3."/>
+        <completeCodeSystem codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED&#160;Clinical&#160;Terms"/>
+        <completeCodeSystem codeSystem="2.16.840.1.113883.15.6" codeSystemName="TNM&#160;Edition7&#160;UICC"/>
+    </valueSet>
+</valueSets>

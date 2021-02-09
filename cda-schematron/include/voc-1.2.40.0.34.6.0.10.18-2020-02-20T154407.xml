@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.6.0.10.18" name="epims_krankheitsmerkmale" displayName="EMS Krankheitsmerkmale VS" effectiveDate="2020-02-20T15:44:07" statusCode="draft" versionLabel="2020">
+        <sourceCodeSystem id="1.2.40.0.34.5.105" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.105" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.105" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.105" canonicalUriR4="urn:oid:1.2.40.0.34.5.105"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="Verstorben" codeSystem="1.2.40.0.34.5.105" displayName="Verstorben" level="0" type="A"/>
+            <concept code="TOD" codeSystem="1.2.40.0.34.5.105" displayName="Tod" level="1" type="L"/>
+            <concept code="TOD_KRANKHEIT" codeSystem="1.2.40.0.34.5.105" displayName="Krankheitsbezogener Tod" level="1" type="L"/>
+            <concept code="AUSSCHEIDER" codeSystem="1.2.40.0.34.5.105" displayName="Ausscheider" level="0" type="L"/>
+            <concept code="ASYMPTOMATISCH" codeSystem="1.2.40.0.34.5.105" displayName="Asymptomatisch" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

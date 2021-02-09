@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<valueSets xmlns="urn:hl7-org:v3" xmlns:local="http://art-decor.org/functions" xmlns:hl7="urn:hl7-org:v3" xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    <valueSet xmlns="" id="1.2.40.0.34.6.0.10.17" name="epims_EMSMaterial" displayName="EMS Material VS" effectiveDate="2020-02-20T14:43:49" statusCode="draft" versionLabel="2020">
+        <sourceCodeSystem id="1.2.40.0.34.5.58" identifierName="" canonicalUri="urn:oid:1.2.40.0.34.5.58" canonicalUriDSTU2="urn:oid:1.2.40.0.34.5.58" canonicalUriSTU3="urn:oid:1.2.40.0.34.5.58" canonicalUriR4="urn:oid:1.2.40.0.34.5.58"/>
+        <publishingAuthority name="HL7 Austria">
+            <addrLine>HL7-Anwendergruppe Österreich</addrLine>
+            <addrLine>Eggenberger Allee 11</addrLine>
+            <addrLine>8020 Graz</addrLine>
+            <addrLine>Österreich</addrLine>
+        </publishingAuthority>
+        <conceptList>
+            <concept code="ABSTRICH" codeSystem="1.2.40.0.34.5.58" displayName="Abstrich" level="0" type="L"/>
+            <concept code="ABSZESS" codeSystem="1.2.40.0.34.5.58" displayName="Abszess" level="0" type="L"/>
+            <concept code="ANAL" codeSystem="1.2.40.0.34.5.58" displayName="Rektalabstrich" level="0" type="L"/>
+            <concept code="ASCITES" codeSystem="1.2.40.0.34.5.58" displayName="Ascites" level="0" type="L"/>
+            <concept code="BIOPSIE" codeSystem="1.2.40.0.34.5.58" displayName="Biopsiematerial" level="0" type="L"/>
+            <concept code="BLOOD" codeSystem="1.2.40.0.34.5.58" displayName="Blut" level="0" type="L"/>
+            <concept code="BLOODAUS" codeSystem="1.2.40.0.34.5.58" displayName="Blutausstrich" level="0" type="L"/>
+            <concept code="BLOODDRY" codeSystem="1.2.40.0.34.5.58" displayName="getrockneter Bluttropfen" level="0" type="L"/>
+            <concept code="BLOODFULL" codeSystem="1.2.40.0.34.5.58" displayName="Vollblut" level="0" type="L"/>
+            <concept code="BLOODPOST" codeSystem="1.2.40.0.34.5.58" displayName="Leichenblut" level="0" type="L"/>
+            <concept code="BRONCHLAV" codeSystem="1.2.40.0.34.5.58" displayName="Bronchiallavage" level="0" type="L"/>
+            <concept code="BRONCHSEKR" codeSystem="1.2.40.0.34.5.58" displayName="Bronchialsekret" level="0" type="L"/>
+            <concept code="CERVSWAB" codeSystem="1.2.40.0.34.5.58" displayName="Cervicalabstrich" level="0" type="L"/>
+            <concept code="CSF" codeSystem="1.2.40.0.34.5.58" displayName="Liquor" level="0" type="L"/>
+            <concept code="EDTA" codeSystem="1.2.40.0.34.5.58" displayName="EDTA-Blut" level="0" type="L"/>
+            <concept code="EDTAPLAS" codeSystem="1.2.40.0.34.5.58" displayName="EDTA-Blut/Plas,a" level="0" type="L"/>
+            <concept code="EITER" codeSystem="1.2.40.0.34.5.58" displayName="Eiter" level="0" type="L"/>
+            <concept code="EJAKULAT" codeSystem="1.2.40.0.34.5.58" displayName="Ejakulat" level="0" type="L"/>
+            <concept code="ERBR" codeSystem="1.2.40.0.34.5.58" displayName="Erbrochenes" level="0" type="L"/>
+            <concept code="GALLE" codeSystem="1.2.40.0.34.5.58" displayName="Gallenflüssigkeit" level="0" type="L"/>
+            <concept code="GELENK" codeSystem="1.2.40.0.34.5.58" displayName="Gelenkflüssigkeit" level="0" type="L"/>
+            <concept code="GEWEBE" codeSystem="1.2.40.0.34.5.58" displayName="Gewebe" level="0" type="L"/>
+            <concept code="HAUT" codeSystem="1.2.40.0.34.5.58" displayName="Haut" level="0" type="L"/>
+            <concept code="HIRN" codeSystem="1.2.40.0.34.5.58" displayName="Hirn" level="0" type="L"/>
+            <concept code="ISOLAT" codeSystem="1.2.40.0.34.5.58" displayName="Isolat" level="0" type="L"/>
+            <concept code="KNOCHENMARK" codeSystem="1.2.40.0.34.5.58" displayName="Knochenmark" level="0" type="L"/>
+            <concept code="KRUSTE" codeSystem="1.2.40.0.34.5.58" displayName="Kruste" level="0" type="L"/>
+            <concept code="LAVAGE" codeSystem="1.2.40.0.34.5.58" displayName="Lavage" level="0" type="L"/>
+            <concept code="LEBER" codeSystem="1.2.40.0.34.5.58" displayName="Leberbiopsie" level="0" type="L"/>
+            <concept code="LUNGE" codeSystem="1.2.40.0.34.5.58" displayName="Lunge" level="0" type="L"/>
+            <concept code="LYMPH" codeSystem="1.2.40.0.34.5.58" displayName="Lymphknoten" level="0" type="L"/>
+            <concept code="MEMBRAN" codeSystem="1.2.40.0.34.5.58" displayName="Membran" level="0" type="L"/>
+            <concept code="MILZ" codeSystem="1.2.40.0.34.5.58" displayName="Milz" level="0" type="L"/>
+            <concept code="NACKENHAUT" codeSystem="1.2.40.0.34.5.58" displayName="Nackenhautbiopsie" level="0" type="L"/>
+            <concept code="NASALSWAB" codeSystem="1.2.40.0.34.5.58" displayName="Nasenabstrich" level="0" type="L"/>
+            <concept code="NASALTHROATSWAB" codeSystem="1.2.40.0.34.5.58" displayName="Rachenabstrich" level="0" type="L"/>
+            <concept code="NEWBORNSWAB" codeSystem="1.2.40.0.34.5.58" displayName="Neugeborenenabstrich" level="0" type="L"/>
+            <concept code="OPMATERIAL" codeSystem="1.2.40.0.34.5.58" displayName="Operationsmaterial" level="0" type="L"/>
+            <concept code="OTHER" codeSystem="1.2.40.0.34.5.58" displayName="anderes" level="0" type="L"/>
+            <concept code="OTHERBODY" codeSystem="1.2.40.0.34.5.58" displayName="andere erregerhaltige Körperflüssigkeiten" level="0" type="L"/>
+            <concept code="OTHERNOTSTERILE" codeSystem="1.2.40.0.34.5.58" displayName="andere nicht sterile Probe" level="0" type="L"/>
+            <concept code="OTHERSTERILE" codeSystem="1.2.40.0.34.5.58" displayName="andere sterile Probe" level="0" type="L"/>
+            <concept code="OTHERSWAB" codeSystem="1.2.40.0.34.5.58" displayName="andere Abstriche" level="0" type="L"/>
+            <concept code="PLASMA" codeSystem="1.2.40.0.34.5.58" displayName="Plasma" level="0" type="L"/>
+            <concept code="POSTMORTEM" codeSystem="1.2.40.0.34.5.58" displayName="post mortem-Material" level="0" type="L"/>
+            <concept code="PUNKTAT" codeSystem="1.2.40.0.34.5.58" displayName="Punktat" level="0" type="L"/>
+            <concept code="PUNKTAT" codeSystem="1.2.40.0.34.5.58" displayName="Punktionsmaterial" level="0" type="L"/>
+            <concept code="RESPSEKR" codeSystem="1.2.40.0.34.5.58" displayName="Respiratorische Sekrete" level="0" type="L"/>
+            <concept code="SEKRETE" codeSystem="1.2.40.0.34.5.58" displayName="Sekrete" level="0" type="L"/>
+            <concept code="SERUM" codeSystem="1.2.40.0.34.5.58" displayName="Serum" level="0" type="L"/>
+            <concept code="SONST" codeSystem="1.2.40.0.34.5.58" displayName="sonstiges" level="0" type="L"/>
+            <concept code="SPEICHEL" codeSystem="1.2.40.0.34.5.58" displayName="Speichel" level="0" type="L"/>
+            <concept code="SPRITZE" codeSystem="1.2.40.0.34.5.58" displayName="Spritzeninhalt" level="0" type="L"/>
+            <concept code="SPUTUM" codeSystem="1.2.40.0.34.5.58" displayName="Sputum" level="0" type="L"/>
+            <concept code="STUHL" codeSystem="1.2.40.0.34.5.58" displayName="Stuhl" level="0" type="L"/>
+            <concept code="THROATSWAB" codeSystem="1.2.40.0.34.5.58" displayName="Rachenabstrich" level="0" type="L"/>
+            <concept code="THROATSWABFLUSS" codeSystem="1.2.40.0.34.5.58" displayName="Rachenspülflüssigkeit Serum" level="0" type="L"/>
+            <concept code="TONS" codeSystem="1.2.40.0.34.5.58" displayName="Tonsillenabstrich" level="0" type="L"/>
+            <concept code="UMGEB" codeSystem="1.2.40.0.34.5.58" displayName="Umgebungsprobe" level="0" type="L"/>
+            <concept code="URINE" codeSystem="1.2.40.0.34.5.58" displayName="Harn" level="0" type="L"/>
+            <concept code="WUND" codeSystem="1.2.40.0.34.5.58" displayName="Wundsekret" level="0" type="L"/>
+            <concept code="EXSUPERI" codeSystem="1.2.40.0.34.5.58" displayName="Exsudat Peritoneum" level="0" type="L"/>
+            <concept code="EXSUPLEURA" codeSystem="1.2.40.0.34.5.58" displayName="Exsudat Pleura" level="0" type="L"/>
+            <concept code="MAGENSAFT" codeSystem="1.2.40.0.34.5.58" displayName="Magensaft" level="0" type="L"/>
+        </conceptList>
+    </valueSet>
+</valueSets>

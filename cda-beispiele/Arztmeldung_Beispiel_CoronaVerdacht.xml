@@ -578,8 +578,7 @@
 						<paragraph styleCode="xELGA_h3">Klinische Manifestation</paragraph>
 						<content ID="disdiag1">Respiratorische Syndrome</content>
 						
-						<paragraph styleCode="xELGA_h3">Weitere Information</paragraph>
-						leichter aber kontinuierlicher Husten
+						
 					</text>
 					<entry typeCode="DRIV">
 						<templateId root="1.3.6.1.4.1.19376.1.3.1"/>
